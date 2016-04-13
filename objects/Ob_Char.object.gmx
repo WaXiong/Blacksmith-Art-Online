@@ -31,6 +31,8 @@ up = false
 down = true
 left = false
 right = false
+player_x = 320
+player_y = 384
 </string>
           </argument>
         </arguments>
