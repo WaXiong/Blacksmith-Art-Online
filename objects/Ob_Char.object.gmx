@@ -4,7 +4,7 @@
   <solid>-1</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -106,7 +106,83 @@ can_move = true
         up = false
         right = false
     }
+    if keyboard_check(vk_space){
+        if can_swing = true{
+        image_speed = 0
+        if up = true{
+        instance_create(x, y-16, Ob_UpSwing)
+        }
+        if down = true{
+        instance_create(x, y+16, Ob_UpSwing)
+        }
+        if right = true{
+        instance_create(x + 16, y, Ob_UpSwing)
+        }
+        if left = true{
+        instance_create(x - 16, y, Ob_UpSwing)
+        }
+        can_swing = false
+        can_move = false
+        alarm[0] = 10
+        }
+    }
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Ob_Cave">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/*if !instance_exists(Ob_Cave)
+{
+    var tempRoomFade;
+    tempRoomFade = instance_create(x, y, Ob_Cave);
+    tempRoomFade.tempTarget = other.targetRoom;
+}
+
+player_x = other.target_x;
+player_y = other.target_y;
+//room_goto(other.targetRoom);
+*/
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>player_x = other.target_x;
+player_y = other.target_y;
+room_goto(other.targetRoom);
 </string>
           </argument>
         </arguments>
@@ -164,7 +240,7 @@ can_move = true
         </arguments>
       </action>
     </event>
-    <event eventtype="9" enumb="87">
+    <event eventtype="7" enumb="4">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -181,24 +257,8 @@ can_move = true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if can_swing = true{
-    image_speed = 0
-    if up = true{
-    instance_create(x, y-16, Ob_UpSwing)
-    }
-    if down = true{
-    instance_create(x, y+16, Ob_UpSwing)
-    }
-    if right = true{
-    instance_create(x + 16, y, Ob_UpSwing)
-    }
-    if left = true{
-    instance_create(x - 16, y, Ob_UpSwing)
-    }
-    can_swing = false
-    can_move = false
-    alarm[0] = 10
-}
+            <string>x = player_x;
+y = player_y;
 </string>
           </argument>
         </arguments>

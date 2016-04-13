@@ -10,10 +10,12 @@
     <sprite>sprites\Sp_UpSwing</sprite>
     <sprite>sprites\Sp_Minion</sprite>
     <sprite>sprites\Sp_Wall</sprite>
+    <sprite>sprites\Sp_Cave</sprite>
+    <sprite>sprites\Sp_Indoor</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Bg_Main</background>
-    <background>background\Bg_Splash</background>
+    <background>background\Bg_Cave</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
@@ -21,11 +23,14 @@
     <object>objects\Ob_UpSwing</object>
     <object>objects\Ob_Minion</object>
     <object>objects\Ob_Wall</object>
-    <object>objects\Obj_Init_Control</object>
+    <object>objects\Ob_Controller</object>
+    <object>objects\Ob_Cave</object>
+    <object>objects\Ob_Door</object>
+    <object>objects\Ob_Indoor</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Rm_Init</room>
     <room>rooms\Rm_Main</room>
+    <room>rooms\Rm_Cave</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
