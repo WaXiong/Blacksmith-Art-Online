@@ -16,6 +16,7 @@
   <backgrounds name="background">
     <background>background\Bg_Main</background>
     <background>background\Bg_Cave</background>
+    <background>background\Bg_Splash</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
@@ -27,8 +28,10 @@
     <object>objects\Ob_Cave</object>
     <object>objects\Ob_Door</object>
     <object>objects\Ob_Indoor</object>
+    <object>objects\Obj_Init_Control</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Rm_Init</room>
     <room>rooms\Rm_Main</room>
     <room>rooms\Rm_Cave</room>
   </rooms>
