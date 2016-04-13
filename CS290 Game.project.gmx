@@ -31,7 +31,8 @@
     <object>objects\Ob_Minion</object>
     <object>objects\Ob_Wall</object>
     <object>objects\Ob_Controller</object>
-    <object>objects\Ob_Cave</object>
+    <object>objects\Ob_mainDoor</object>
+    <object>objects\Ob_Room_Trans</object>
     <object>objects\Ob_Door</object>
     <object>objects\Ob_Indoor</object>
     <objects name="Rm_Init">

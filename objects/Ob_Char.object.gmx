@@ -134,7 +134,7 @@ can_move = true
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="Ob_Cave">
+    <event eventtype="4" ename="Ob_mainDoor">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -151,17 +151,17 @@ can_move = true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*if !instance_exists(Ob_Cave)
+            <string>if !instance_exists(Ob_mainDoor)
 {
     var tempRoomFade;
-    tempRoomFade = instance_create(x, y, Ob_Cave);
+    tempRoomFade = instance_create(x, y, Ob_mainDoor);
     tempRoomFade.tempTarget = other.targetRoom;
 }
 
 player_x = other.target_x;
 player_y = other.target_y;
 //room_goto(other.targetRoom);
-*/
+
 </string>
           </argument>
         </arguments>
