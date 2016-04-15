@@ -30,6 +30,7 @@
     <object>objects\Ob_Indoor</object>
     <objects name="Rm_Init">
       <object>objects\Obj_Init_Control</object>
+      <object>objects\Obj_RmInit_Screen</object>
     </objects>
   </objects>
   <rooms name="rooms">
