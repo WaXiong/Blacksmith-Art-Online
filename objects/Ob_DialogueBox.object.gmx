@@ -8,6 +8,45 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>var dialogueText = ""
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>203</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_kill_object</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -25,59 +64,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>window_get_height()
-window_get_width();
-
-draw_set_font(titleScreenFont);
-draw_text_colour(window_get_width() / 2, 
-    window_get_height() / 2,
-    "Blacksmith Art Online",
-    c_white,
-    c_white,
-    c_white,
-    c_white,
-    1);
-    
-draw_set_font(regularTextFont);
-    
-draw_text_colour(window_get_width() / 2, 
-    window_get_height() * .9,
-    "Press space to play.",
-    c_white,
-    c_white,
-    c_white,
-    c_white,
-    1);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="32">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>targetRoom = Rm_Main;
-if !instance_exists(Ob_Room_Trans)
-{
-    var tempRoomFade;
-    tempRoomFade = instance_create(x, y, Ob_Room_Trans);
-    tempRoomFade.tempTarget = other.targetRoom;
-}
-    //room_goto(Rm_Main);
+            <string>draw_text(5, 5, dialogueText);
 </string>
           </argument>
         </arguments>

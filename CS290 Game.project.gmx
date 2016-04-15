@@ -24,6 +24,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\titleScreenFont</font>
+    <font>fonts\regularTextFont</font>
   </fonts>
   <objects name="objects">
     <object>objects\Ob_Char</object>
@@ -41,6 +42,7 @@
       <object>objects\Obj_Init_Control</object>
       <object>objects\Obj_RmInit_Screen</object>
     </objects>
+    <object>objects\Ob_DialogueBox</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Rm_Init</room>
