@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var dialogueText = ""
+            <string>text = ""
+
+alarm[0] = room_speed * 5;
 </string>
           </argument>
         </arguments>
@@ -64,7 +66,24 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(5, 5, dialogueText);
+            <string>draw_set_alpha(0.9);
+
+col = make_color_rgb(61, 61, 61);
+
+draw_rectangle_colour(
+    0,
+    0,
+    window_get_width(),
+    100, 
+    col,
+    col,
+    col,
+    col,
+    false);
+
+draw_set_alpha(1.0);
+draw_set_color(c_white);
+draw_text(5, 5, text);
 </string>
           </argument>
         </arguments>

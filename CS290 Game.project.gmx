@@ -44,6 +44,7 @@
     </objects>
     <object>objects\Ob_DialogueBox</object>
   </objects>
+  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\Rm_Init</room>
     <room>rooms\Rm_Main</room>
