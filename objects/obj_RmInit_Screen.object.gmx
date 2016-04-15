@@ -70,7 +70,14 @@ draw_text_colour(window_get_width() / 2,
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(Rm_Main);
+            <string>targetRoom = Rm_Main;
+if !instance_exists(Ob_Room_Trans)
+{
+    var tempRoomFade;
+    tempRoomFade = instance_create(x, y, Ob_Room_Trans);
+    tempRoomFade.tempTarget = other.targetRoom;
+}
+    //room_goto(Rm_Main);
 </string>
           </argument>
         </arguments>

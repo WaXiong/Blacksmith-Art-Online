@@ -25,14 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>can_swing = true
+            <string>//variables
+can_swing = true
 can_move = true
 up = false
 down = true
 left = false
 right = false
-player_x = 320
-player_y = 384
+//set player spawn
+player_x = 350
+player_y = 380
 </string>
           </argument>
         </arguments>
@@ -55,7 +57,8 @@ player_y = 384
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>can_swing = true
+            <string>//reset timed variables
+can_swing = true
 can_move = true
 </string>
           </argument>
@@ -79,7 +82,8 @@ can_move = true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if can_move = true{
+            <string>//movement and swing check
+if can_move = true{
     if keyboard_check(vk_right){
         x += 4
         right = true
@@ -151,40 +155,16 @@ can_move = true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !instance_exists(Ob_mainDoor)
+            <string>//door entry and room fades
+if !instance_exists(Ob_Room_Trans)
 {
     var tempRoomFade;
-    tempRoomFade = instance_create(x, y, Ob_mainDoor);
+    tempRoomFade = instance_create(x, y, Ob_Room_Trans);
     tempRoomFade.tempTarget = other.targetRoom;
 }
 
 player_x = other.target_x;
 player_y = other.target_y;
-//room_goto(other.targetRoom);
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>player_x = other.target_x;
-player_y = other.target_y;
-room_goto(other.targetRoom);
 </string>
           </argument>
         </arguments>
@@ -259,7 +239,8 @@ room_goto(other.targetRoom);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = player_x;
+            <string>//after player spawn variables
+x = player_x;
 y = player_y;
 </string>
           </argument>
