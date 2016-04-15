@@ -28,7 +28,9 @@
     <object>objects\Ob_Cave</object>
     <object>objects\Ob_Door</object>
     <object>objects\Ob_Indoor</object>
-    <object>objects\Obj_Init_Control</object>
+    <objects name="Rm_Init">
+      <object>objects\Obj_Init_Control</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\Rm_Init</room>
