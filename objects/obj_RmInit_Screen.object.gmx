@@ -28,6 +28,7 @@
             <string>window_get_height()
 window_get_width();
 
+draw_set_font(titleScreenFont);
 draw_text_colour(window_get_width() / 2, 
     window_get_height() / 2,
     "Blacksmith Art Online",
@@ -36,6 +37,8 @@ draw_text_colour(window_get_width() / 2,
     c_white,
     c_white,
     1);
+    
+//draw_set_font(null);
     
 draw_text_colour(window_get_width() / 2, 
     window_get_height() * .9,

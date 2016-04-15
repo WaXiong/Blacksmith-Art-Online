@@ -22,6 +22,9 @@
   <scripts name="scripts">
     <script>scripts\dialogue.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\titleScreenFont</font>
+  </fonts>
   <objects name="objects">
     <object>objects\Ob_Char</object>
     <object>objects\Ob_UpSwing</object>
