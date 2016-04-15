@@ -27,10 +27,17 @@
     <font>fonts\regularTextFont</font>
   </fonts>
   <objects name="objects">
-    <object>objects\Ob_Char</object>
-    <object>objects\Ob_UpSwing</object>
-    <object>objects\Ob_Minion</object>
     <object>objects\Ob_Wall</object>
+    <objects name="Player">
+      <object>objects\Ob_Char</object>
+      <object>objects\Ob_Slash</object>
+      <object>objects\Ob_Smash</object>
+    </objects>
+    <objects name="Enemies">
+      <object>objects\Ob_softEnemies</object>
+      <object>objects\Ob_Minion</object>
+      <object>objects\Ob_hardEnemy</object>
+    </objects>
     <objects name="Doors">
       <object>objects\Ob_Controller</object>
       <object>objects\Ob_mainDoor</object>
