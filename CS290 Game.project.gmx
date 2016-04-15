@@ -19,6 +19,9 @@
     <background>background\Bg_Splash</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\dialogue.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\Ob_Char</object>
     <object>objects\Ob_UpSwing</object>
