@@ -47,7 +47,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>dialogue("Hello! Welcome to Blacksmith Art Online!");
+            <string>if room == 1 {
+    dialogue("Hello! Welcome to Blacksmith Art Online!");
+}
 </string>
           </argument>
         </arguments>
