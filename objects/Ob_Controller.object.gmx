@@ -25,23 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if keyboard_check(vk_escape) {
-    if global.gamePaused == false {
-        //https://www.reddit.com/r/gamemaker/comments/1xkopd/how_do_i_make_a_pause_screen/cfca1b6
-        instance_deactivate_all( true ); //Do deactivate the controller as well
-
-
-        //instance_create( x, y, pauseMenu ); //This will be active
-        //It was created after everything was deactivated
-
-        global.gamePaused = true;
-    } else {
-        global.gamePaused = false;
-        
-        instance_activate_all();
-    }
-}
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -88,6 +72,42 @@
             <kind>1</kind>
             <string>Ob_Char.player_x = Ob_Char.xstart;
 Ob_Char.player_y = Ob_Char.ystart;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="10" enumb="27">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if global.gamePaused == false {
+    //https://www.reddit.com/r/gamemaker/comments/1xkopd/how_do_i_make_a_pause_screen/cfca1b6
+    instance_deactivate_all( true ); //Do deactivate the controller as well
+
+
+    //instance_create( x, y, pauseMenu ); //This will be active
+    //It was created after everything was deactivated
+
+    global.gamePaused = true;
+} else {
+    global.gamePaused = false;
+    
+    instance_activate_all();
+}
 </string>
           </argument>
         </arguments>
