@@ -192,7 +192,7 @@ player_y = other.target_y;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="Ob_Wall">
+    <event eventtype="4" ename="Ob_Minion">
       <action>
         <libid>1</libid>
         <id>115</id>
@@ -218,7 +218,7 @@ player_y = other.target_y;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="Ob_Minion">
+    <event eventtype="4" ename="Ob_Wall">
       <action>
         <libid>1</libid>
         <id>115</id>

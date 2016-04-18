@@ -28,6 +28,8 @@
             <string>global.playerName = "Red";
 global.partnerName = "Blue";
 
+global.gamePaused = false;
+
 //sets an alarm that will trigger and allow us to go to the main game.
 //alarm[0] = room_speed * 5;
 </string>

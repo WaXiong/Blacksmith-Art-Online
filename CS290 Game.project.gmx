@@ -27,6 +27,7 @@
     <font>fonts\regularTextFont</font>
   </fonts>
   <objects name="objects">
+    <object>objects\Ob_Controller</object>
     <object>objects\Ob_Wall</object>
     <objects name="Player">
       <object>objects\Ob_Char</object>
@@ -39,7 +40,6 @@
       <object>objects\Ob_hardEnemy</object>
     </objects>
     <objects name="Doors">
-      <object>objects\Ob_Controller</object>
       <object>objects\Ob_mainDoor</object>
       <object>objects\Ob_Room_Trans</object>
       <object>objects\Ob_Indoor</object>
@@ -51,7 +51,6 @@
     </objects>
     <object>objects\Ob_DialogueBox</object>
   </objects>
-  <timelines name="timelines"/>
   <rooms name="rooms">
     <room>rooms\Rm_Init</room>
     <room>rooms\Rm_Main</room>
