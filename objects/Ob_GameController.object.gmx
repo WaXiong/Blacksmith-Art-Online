@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,28 +25,56 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>text = ""
-
-alarm[0] = room_speed * 5;
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>dialogue("Hello! Welcome to Blacksmith Art Online!");
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="0">
+    <event eventtype="7" enumb="2">
       <action>
         <libid>1</libid>
-        <id>203</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_kill_object</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Ob_Char.player_x = Ob_Char.xstart;
+Ob_Char.player_y = Ob_Char.ystart;
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
     <event eventtype="8" enumb="0">
@@ -66,25 +94,46 @@ alarm[0] = room_speed * 5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_alpha(0.9);
+            <string>if global.gamePaused {
+    draw_set_font(titleScreenFont);
+    draw_text(0, 0, "Game Paused");
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="10" enumb="27">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if global.gamePaused == false {
+    //https://www.reddit.com/r/gamemaker/comments/1xkopd/how_do_i_make_a_pause_screen/cfca1b6
+    instance_deactivate_all( true ); //Do deactivate the controller as well
 
-col = make_color_rgb(61, 61, 61);
 
-draw_rectangle_colour(
-    0,
-    0,
-    window_get_width(),
-    100, 
-    col,
-    col,
-    col,
-    col,
-    false);
+    //instance_create( x, y, pauseMenu ); //This will be active
+    //It was created after everything was deactivated
 
-draw_set_alpha(1.0);
-draw_set_color(c_white);
-draw_set_font(regularTextFont);
-draw_text(5, 5, text);
+    global.gamePaused = true;
+} else {
+    global.gamePaused = false;
+    
+    instance_activate_all();
+}
 </string>
           </argument>
         </arguments>
