@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(darkness_within, 5, false);
+            <string>audio_play_sound(darkness_within, 5, true);
 </string>
           </argument>
         </arguments>
