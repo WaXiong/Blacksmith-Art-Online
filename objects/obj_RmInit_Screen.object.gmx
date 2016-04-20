@@ -93,7 +93,7 @@ draw_text_colour(window_get_width() / 2,
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>fadetransition(Rm_Main);
+            <string>roomfadetransition(Rm_Main);
 
 audio_stop_all();
     //room_goto(Rm_Main);

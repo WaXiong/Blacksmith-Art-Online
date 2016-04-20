@@ -178,12 +178,7 @@ if can_move = true{
           <argument>
             <kind>1</kind>
             <string>//door entry and room fades
-if !instance_exists(Ob_Room_Trans)
-{
-    var tempRoomFade;
-    tempRoomFade = instance_create(x, y, Ob_Room_Trans);
-    tempRoomFade.tempTarget = other.targetRoom;
-}
+fadetransition();
 
 player_x = other.target_x;
 player_y = other.target_y;

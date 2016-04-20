@@ -23,7 +23,7 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\dialogue.gml</script>
-    <script>scripts\fadetransition.gml</script>
+    <script>scripts\roomfadetransition.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\titleScreenFont</font>
