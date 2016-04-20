@@ -25,9 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if Ob_Slash == visible{
+            <string>if instance_exists(Ob_Slash) {
     alarm[0] = 5;
 }
+
 </string>
           </argument>
         </arguments>
