@@ -7,7 +7,7 @@ var winWidth = window_get_width();
 
 var dialog;
 
-if (instance_find(Ob_DialogueBox, 1) == noone) {
+if (instance_find(Ob_DialogueBox, 0) == noone) {
     dialog = instance_create(
         0, 
         100,
@@ -20,4 +20,4 @@ if (instance_find(Ob_DialogueBox, 1) == noone) {
         dialog);
 }
 
-dialog.text = argument0 ;
+dialog.text = argument0;
