@@ -6,6 +6,7 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\darkness_within</sound>
+    <sound>sound\loving_you</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\Sp_Char</sprite>

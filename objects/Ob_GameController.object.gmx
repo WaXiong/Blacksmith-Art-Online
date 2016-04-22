@@ -50,6 +50,13 @@
             <string>if room == Rm_Main {
     dialogue("Hello " + global.playerName + "! Welcome to Blacksmith Art Online!");
 }
+
+//play this song in the game maps only.
+if room == Rm_Main || room == Rm_Cave {
+    if !audio_is_playing(loving_you) {
+        audio_play_sound(loving_you, 50, true);
+    }
+}
 </string>
           </argument>
         </arguments>
