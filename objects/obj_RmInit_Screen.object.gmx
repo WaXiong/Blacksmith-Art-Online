@@ -52,6 +52,7 @@
 window_get_width();
 
 draw_set_font(titleScreenFont);
+draw_set_halign(fa_center)
 draw_text_colour(window_get_width() / 2, 
     window_get_height() / 2,
     "Blacksmith Art Online",
