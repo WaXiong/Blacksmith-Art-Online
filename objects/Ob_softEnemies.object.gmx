@@ -107,9 +107,10 @@ mp_potential_step(Ob_Char.x, Ob_Char.y, 2, false)
 //minion movement
 if can_move = true{
     can_move = false
-        if(point_distance(x, y, Ob_Char.x, Ob_Char.y) &lt; 200)
+    if(point_distance(x, y, Ob_Char.x, Ob_Char.y) &lt; 200)
     {
         move_towards_point(Ob_Char.x, Ob_Char.y, 4);
+        image_angle = direction
     }
     else speed =  0;
     alarm[0] = 5
