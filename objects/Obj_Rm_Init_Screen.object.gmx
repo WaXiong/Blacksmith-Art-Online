@@ -48,30 +48,31 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>window_get_height()
-window_get_width();
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="67">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>roomfadetransition(Rm_CreateCharacter);
 
-draw_set_font(titleScreenFont);
-draw_set_halign(fa_center)
-draw_text_colour(window_get_width() / 2, 
-    window_get_height() / 2,
-    "Blacksmith Art Online",
-    c_white,
-    c_white,
-    c_white,
-    c_white,
-    1);
-    
-draw_set_font(regularTextFont);
-    
-draw_text_colour(window_get_width() / 2, 
-    window_get_height() * .9,
-    "Press space to play.",
-    c_white,
-    c_white,
-    c_white,
-    c_white,
-    1);
+audio_stop_all();
 </string>
           </argument>
         </arguments>
@@ -94,7 +95,7 @@ draw_text_colour(window_get_width() / 2,
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>roomfadetransition(Rm_CreateCharacter);
+            <string>roomfadetransition(Rm_Main);
 
 audio_stop_all();
     //room_goto(Rm_Main);

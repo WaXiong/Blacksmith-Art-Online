@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>labelText = "";
+labelFont = regularTextFont;
 </string>
           </argument>
         </arguments>
@@ -50,6 +51,7 @@
             <kind>1</kind>
             <string>draw_set_halign(fa_left);
 draw_set_valign(fa_top);
+draw_set_font(labelFont);
 draw_text(self.x, self.y, labelText);
 </string>
           </argument>
