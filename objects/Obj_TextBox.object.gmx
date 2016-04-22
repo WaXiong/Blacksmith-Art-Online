@@ -25,7 +25,30 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(darkness_within, 5, true);
+            <string>enteredText = ""
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>enteredText = keyboard_string;
 </string>
           </argument>
         </arguments>
@@ -48,35 +71,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>window_get_height()
-window_get_width();
-
-draw_set_font(titleScreenFont);
-draw_text_colour(window_get_width() / 2, 
-    window_get_height() / 2,
-    "Blacksmith Art Online",
-    c_white,
-    c_white,
-    c_white,
-    c_white,
-    1);
-    
-draw_set_font(regularTextFont);
-    
-draw_text_colour(window_get_width() / 2, 
-    window_get_height() * .9,
-    "Press space to play.",
-    c_white,
-    c_white,
-    c_white,
-    c_white,
-    1);
+            <string>draw_text(self.x, self.y, enteredText);
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="9" enumb="32">
+    <event eventtype="9" enumb="8">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -93,10 +94,9 @@ draw_text_colour(window_get_width() / 2,
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>roomfadetransition(Rm_CreateCharacter);
-
-audio_stop_all();
-    //room_goto(Rm_Main);
+            <string>if enteredText != "" {
+    enteredText = string_copy(enteredText, 0, string_length(enteredText) - 1);
+}
 </string>
           </argument>
         </arguments>
