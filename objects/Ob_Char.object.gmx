@@ -76,7 +76,7 @@ can_move = true
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>other</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
@@ -113,7 +113,7 @@ if can_move = true{
         right = false
     }
     //slash
-    if keyboard_check(vk_space){
+    else if keyboard_check(ord("Z")){
         if can_swing = true{
         image_speed = 0
         if up = true{
@@ -134,7 +134,7 @@ if can_move = true{
         }
     }
     //smash
-    if keyboard_check(ord('x')){
+    else if keyboard_check(ord("X")){
         if can_swing = true{
             image_speed = 0
             if up = true{
@@ -187,7 +187,7 @@ player_y = other.target_y;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="Ob_Minion">
+    <event eventtype="4" ename="Ob_sMinion">
       <action>
         <libid>1</libid>
         <id>115</id>

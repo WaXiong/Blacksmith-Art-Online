@@ -10,7 +10,9 @@
   <sprites name="sprites">
     <sprite>sprites\Sp_Char</sprite>
     <sprite>sprites\Sp_UpSwing</sprite>
-    <sprite>sprites\Sp_Minion</sprite>
+    <sprite>sprites\Sp_Smash</sprite>
+    <sprite>sprites\Sp_sMinion</sprite>
+    <sprite>sprites\Sp_hMinion</sprite>
     <sprite>sprites\Sp_Wall</sprite>
     <sprite>sprites\Sp_Cave</sprite>
     <sprite>sprites\Sp_Indoor</sprite>
@@ -39,8 +41,9 @@
     </objects>
     <objects name="Enemies">
       <object>objects\Ob_softEnemies</object>
-      <object>objects\Ob_Minion</object>
       <object>objects\Ob_hardEnemy</object>
+      <object>objects\Ob_sMinion</object>
+      <object>objects\Ob_hMinion</object>
     </objects>
     <objects name="Doors">
       <object>objects\Ob_mainDoor</object>
