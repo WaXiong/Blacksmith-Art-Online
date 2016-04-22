@@ -4,7 +4,7 @@
   <solid>-1</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -119,7 +119,7 @@ can_move = true
         right = false
     }
     //slash
-    if keyboard_check("Z"){
+    if keyboard_check(ord("Z")){
         if can_swing = true{
         if up = true{
         instance_create(x, y-16, Ob_Slash)
@@ -197,7 +197,33 @@ player_y = other.target_y;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="Ob_sMinion">
+    <event eventtype="4" ename="Ob_hardEnemy">
+      <action>
+        <libid>1</libid>
+        <id>115</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_bounce</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Ob_softEnemies">
       <action>
         <libid>1</libid>
         <id>115</id>
