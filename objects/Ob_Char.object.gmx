@@ -115,7 +115,6 @@ if can_move = true{
     //slash
     else if keyboard_check(ord("Z")){
         if can_swing = true{
-        image_speed = 0
         if up = true{
         instance_create(x, y-16, Ob_Slash)
         }
@@ -136,7 +135,6 @@ if can_move = true{
     //smash
     else if keyboard_check(ord("X")){
         if can_swing = true{
-            image_speed = 0
             if up = true{
                 instance_create(x, y-16, Ob_Smash)
             }
