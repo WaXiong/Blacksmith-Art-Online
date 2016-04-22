@@ -47,8 +47,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if room == 1 {
-    dialogue("Hello! Welcome to Blacksmith Art Online!");
+            <string>if room == Rm_Main {
+    dialogue("Hello " + global.playerName + "! Welcome to Blacksmith Art Online!");
 }
 </string>
           </argument>

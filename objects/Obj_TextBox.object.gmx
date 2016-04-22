@@ -82,13 +82,18 @@ enteredText = keyboard_string;
             <string>draw_set_halign(fa_left);
 
 //create a fake message to calculate the width of the border rectangle.
-var fakeText = "";
+/*var fakeText = "";
 for(i = 0; i &lt; maxTextLength; i += 1) {
     fakeText += "W";
 }
 
+font_get_size(0)
+
 //draw the border rectangle.
 draw_rectangle(self.x, self.y, self.x + string_width(fakeText), self.y + string_height(fakeText), c_white);
+*/
+
+draw_rectangle(self.x, self.y, self.x + string_width(enteredText) + 1, self.y + string_height(enteredText), c_white);
 
 //draw the text
 draw_text(self.x, self.y, enteredText);
