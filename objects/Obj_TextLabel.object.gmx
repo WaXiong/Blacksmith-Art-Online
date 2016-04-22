@@ -25,38 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>enteredText = "";
-maxTextLength = 15;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>// http://docs.yoyogames.com/source/dadiospice/002_reference/mouse,%20keyboard%20and%20other%20controls/keyboard%20input/keyboard_string.html
-
-if string_length(keyboard_string) &gt; maxTextLength
-{
-    keyboard_string = string_copy(keyboard_string, 1, maxTextLength);
-}
-
-enteredText = keyboard_string;
+            <string>labelText = "";
 </string>
           </argument>
         </arguments>
@@ -80,43 +49,8 @@ enteredText = keyboard_string;
           <argument>
             <kind>1</kind>
             <string>draw_set_halign(fa_left);
-
-//create a fake message to calculate the width of the border rectangle.
-var fakeText = "";
-for(i = 0; i &lt; maxTextLength; i += 1) {
-    fakeText += "W";
-}
-
-//draw the border rectangle.
-draw_rectangle(self.x, self.y, self.x + string_width(fakeText), self.y + string_height(fakeText), c_white);
-
-//draw the text
-draw_text(self.x, self.y, enteredText);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="8">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if enteredText != "" {
-    enteredText = string_copy(enteredText, 0, string_length(enteredText) - 1);
-}
+draw_set_valign(fa_top);
+draw_text(self.x, self.y, labelText);
 </string>
           </argument>
         </arguments>

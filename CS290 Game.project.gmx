@@ -53,11 +53,15 @@
     </objects>
     <objects name="Rm_Init">
       <object>objects\Obj_Init_Control</object>
-      <object>objects\Obj_RmInit_Screen</object>
+      <object>objects\Obj_Rm_Init_Screen</object>
     </objects>
-    <object>objects\Ob_DialogueBox</object>
     <objects name="Rm_Character_Creator">
+      <object>objects\Obj_Rm_CreateCharacter</object>
+    </objects>
+    <objects name="UI">
       <object>objects\Obj_TextBox</object>
+      <object>objects\Ob_DialogueBox</object>
+      <object>objects\Obj_TextLabel</object>
     </objects>
   </objects>
   <rooms name="rooms">
