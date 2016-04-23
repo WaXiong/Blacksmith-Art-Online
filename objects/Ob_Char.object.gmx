@@ -121,21 +121,21 @@ can_move = true
     //slash
     if keyboard_check(ord("Z")){
         if can_swing = true{
-        if up = true{
-        instance_create(x, y-16, Ob_Slash)
-        }
-        if down = true{
-        instance_create(x, y+16, Ob_Slash)
-        }
-        if right = true{
-        instance_create(x + 16, y, Ob_Slash)
-        }
-        if left = true{
-        instance_create(x - 16, y, Ob_Slash)
-        }
+            if up = true{
+                instance_create(x, y-16, Ob_Slash)
+            }
+            if down = true{
+                instance_create(x, y+16, Ob_Slash)
+            }
+                if right = true{
+            instance_create(x + 16, y, Ob_Slash)
+            }
+                if left = true{
+            instance_create(x - 16, y, Ob_Slash)
+            }
         can_swing = false
         can_move = false
-        alarm[0] = 5
+        alarm[0] = 10
         }
     }
     //smash
