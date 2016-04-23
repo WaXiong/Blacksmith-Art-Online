@@ -119,12 +119,6 @@ if can_move = true{
         up = false
         right = false
     }
-    if x == xprevious &amp;&amp; y == yprevious{
-    image_speed = 0;
-    image_index = 0;
-    }
-    else{
-    image_speed = 0.4}
     //slash
     if keyboard_check(ord("Z")){
         if can_swing = true{
@@ -165,6 +159,12 @@ if can_move = true{
             alarm[0] = 10
         }
     }
+    if x == xprevious &amp;&amp; y == yprevious{
+    image_speed = 0;
+    image_index = 0;
+    }
+    else{
+    image_speed = 0.4}
 }
 </string>
           </argument>

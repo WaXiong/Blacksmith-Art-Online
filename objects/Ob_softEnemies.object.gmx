@@ -112,7 +112,7 @@ if can_move = true{
         move_towards_point(Ob_Char.x, Ob_Char.y, 4);
         image_angle = direction
     }
-    else speed =  0;
+    else speed = 0
     alarm[0] = 5
 }
 </string>
