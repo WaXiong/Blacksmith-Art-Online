@@ -32,6 +32,7 @@ up = false
 down = true
 left = false
 right = false
+
 //set player spawn
 player_x = 350
 player_y = 380
@@ -82,9 +83,9 @@ can_move = true
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if can_move = true{
-    image_speed = room_speed/2
-    sprite_assign(Ob_Char, spr_still)
+            <string>
+if can_move = true{
+    //keyboard movement
     if keyboard_check(vk_right){
         x += 4
         sprite_assign(spr_still, spr_right);
@@ -118,6 +119,12 @@ can_move = true
         up = false
         right = false
     }
+    if x == xprevious &amp;&amp; y == yprevious{
+    image_speed = 0;
+    image_index = 0;
+    }
+    else{
+    image_speed = 0.4}
     //slash
     if keyboard_check(ord("Z")){
         if can_swing = true{
@@ -157,12 +164,6 @@ can_move = true
             can_move = false
             alarm[0] = 10
         }
-    }
-    if x == xprevious &amp;&amp; y == yprevious{
-    image_speed = 0;
-    image_index = 0;
-    } else{
-    image_speed = 0.4
     }
 }
 </string>
