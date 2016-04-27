@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>//draw health
+//(heart,bar_length,hp,max_hp,bar_x,bar_y,xoffset,yoffset)
+Scp_Health(Sp_Health, 50,50, 50, 32, 32, 0, 0 )
 </string>
           </argument>
         </arguments>

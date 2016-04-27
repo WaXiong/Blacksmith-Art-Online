@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="Ob_GameController" x="0" y="0" name="inst_99149F96" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Ob_Indoor" x="448" y="736" name="inst_3ECA6E04" locked="0" code="targetRoom = Rm_Main;&#xA;target_x = 160 ;&#xA;target_y = 256;&#xA;" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_Indoor" x="448" y="736" name="inst_3ECA6E04" locked="0" code="targetRoom = Rm_Main;&#xA;target_x = 160 ;&#xA;target_y = 265;&#xA;" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
