@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>//variables
+is_hit = false;
+invincible = 1;// time befor can get hit again
 can_swing = true
 can_move = true
 up = false
@@ -36,6 +38,29 @@ right = false
 //set player spawn
 player_x = 350
 player_y = 380
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>is_hit = false;
 </string>
           </argument>
         </arguments>
@@ -201,6 +226,31 @@ player_y = other.target_y;
     <event eventtype="4" ename="Ob_hardEnemy">
       <action>
         <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (is_hit == false){
+    is_hit = true;
+    global.hp = global.hp - 1;
+    alarm [1] = (room_speed * invincible);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>115</id>
         <kind>0</kind>
         <userelative>0</userelative>
@@ -225,6 +275,31 @@ player_y = other.target_y;
       </action>
     </event>
     <event eventtype="4" ename="Ob_softEnemies">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (is_hit == false){
+    is_hit = true;
+    global.hp = global.hp - 1;
+    alarm [1] = (room_speed * invincible);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
       <action>
         <libid>1</libid>
         <id>115</id>
