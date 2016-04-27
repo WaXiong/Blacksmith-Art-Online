@@ -2,9 +2,9 @@
 <object>
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -47,8 +47,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if room == Rm_Main {
+            <string>if room == Rm_Main &amp;&amp; global.beenToFirstRoom == false {
     dialogue("Hello " + global.playerName + "! Welcome to Blacksmith Art Online!");
+    
+    Ob_Char.player_x = Ob_Char.xstart;
+    Ob_Char.player_y = Ob_Char.ystart;
+    
+    global.beenToFirstRoom = true;
 }
 
 //play this song in the game maps only.
@@ -79,8 +84,11 @@ if room == Rm_Main || room == Rm_Cave {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Ob_Char.player_x = Ob_Char.xstart;
-Ob_Char.player_y = Ob_Char.ystart;
+            <string>global.playerName = "Red";
+global.partnerName = "Blue";
+
+global.gamePaused = false;
+global.beenToFirstRoom = false;
 </string>
           </argument>
         </arguments>

@@ -85,7 +85,6 @@
       <object>objects\Ob_Door</object>
     </objects>
     <objects name="Rm_Init">
-      <object>objects\Obj_Init_Control</object>
       <object>objects\Obj_Rm_Init_Screen</object>
     </objects>
     <objects name="Rm_Character_Creator">
