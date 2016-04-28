@@ -52,6 +52,12 @@
     <background>background\Bg_Main</background>
     <background>background\Bg_Cave</background>
     <background>background\Bg_Splash</background>
+    <background>background\background3</background>
+    <background>background\background4</background>
+    <background>background\background5</background>
+    <background>background\background6</background>
+    <background>background\background7</background>
+    <background>background\background8</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
