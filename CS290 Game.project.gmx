@@ -104,6 +104,7 @@
     <room>rooms\Rm_CreateCharacter</room>
     <room>rooms\Rm_Main</room>
     <room>rooms\Rm_Cave</room>
+    <room>rooms\Rm_GameOver</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

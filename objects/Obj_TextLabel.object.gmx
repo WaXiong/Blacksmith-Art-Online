@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>labelText = "";
 labelFont = regularTextFont;
+labelColor = c_black;
 </string>
           </argument>
         </arguments>
@@ -52,6 +53,7 @@ labelFont = regularTextFont;
             <string>draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_set_font(labelFont);
+draw_set_color(labelColor);
 draw_text(self.x, self.y, labelText);
 </string>
           </argument>
