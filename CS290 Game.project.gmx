@@ -9,11 +9,8 @@
     <sound>sound\loving_you</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\Sp_Char</sprite>
     <sprite>sprites\Sp_UpSwing</sprite>
     <sprite>sprites\Sp_Smash</sprite>
-    <sprite>sprites\Sp_sMinion</sprite>
-    <sprite>sprites\Sp_hMinion</sprite>
     <sprite>sprites\Sp_Wall</sprite>
     <sprite>sprites\Sp_Cave</sprite>
     <sprite>sprites\Sp_Health</sprite>

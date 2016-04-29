@@ -49,7 +49,7 @@ alarm[0] = room_speed * 5;
         <isnot>0</isnot>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
