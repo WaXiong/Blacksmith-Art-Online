@@ -105,11 +105,13 @@ is_hit = false;
 mp_potential_step(Ob_Char.x, Ob_Char.y, 2, false)
 */
 //minion movement
+
 if can_move = true{
     can_move = false
         if(point_distance(x, y, Ob_Char.x, Ob_Char.y) &lt; 200)
     {
         move_towards_point(Ob_Char.x, Ob_Char.y, 4);
+        //image_angle = direction
         image_speed = 1
     }
 
@@ -119,6 +121,17 @@ if can_move = true{
         image_index = 0;
     }
     alarm[0] = 5
+}
+
+// minion depth
+// is working but it keeps checking all instances instead of the one at hand
+if (Ob_hardEnemy.y &gt; Ob_Char.y)
+{
+    depth = Ob_Char.y - Ob_hardEnemy.y;
+}
+else 
+{
+    depth = Ob_Char.y + Ob_hardEnemy.y;
 }
 </string>
           </argument>
@@ -251,24 +264,24 @@ if (is_hit == true)
     <event eventtype="4" ename="Ob_Wall">
       <action>
         <libid>1</libid>
-        <id>115</id>
+        <id>101</id>
         <kind>0</kind>
-        <userelative>0</userelative>
+        <userelative>-1</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
         <exetype>1</exetype>
-        <functionname>action_bounce</functionname>
+        <functionname>action_move</functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>4</kind>
-            <string>0</string>
+            <kind>1</kind>
+            <string>000010000</string>
           </argument>
           <argument>
-            <kind>4</kind>
+            <kind>0</kind>
             <string>0</string>
           </argument>
         </arguments>
@@ -277,7 +290,7 @@ if (is_hit == true)
   </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
-  <PhysicsObjectShape>0</PhysicsObjectShape>
+  <PhysicsObjectShape>2</PhysicsObjectShape>
   <PhysicsObjectDensity>0.5</PhysicsObjectDensity>
   <PhysicsObjectRestitution>0.100000001490116</PhysicsObjectRestitution>
   <PhysicsObjectGroup>0</PhysicsObjectGroup>

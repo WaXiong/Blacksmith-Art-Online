@@ -148,16 +148,20 @@ if can_move = true{
     if keyboard_check(ord("Z")){
         if can_swing = true{
             if up = true{
+                sprite_assign(Sp_Swing, Sp_UpSwing)
                 instance_create(x, y-16, Ob_Slash)
             }
             if down = true{
+                sprite_assign(Sp_Swing, Sp_DownSwing)
                 instance_create(x, y+16, Ob_Slash)
             }
-                if right = true{
-            instance_create(x + 16, y, Ob_Slash)
+            if right = true{
+                sprite_assign(Sp_Swing, Sp_RightSwing)
+                instance_create(x + 16, y, Ob_Slash)
             }
-                if left = true{
-            instance_create(x - 16, y, Ob_Slash)
+            if left = true{
+                sprite_assign(Sp_Swing, Sp_LeftSwing)
+                instance_create(x - 16, y, Ob_Slash)
             }
         can_swing = false
         can_move = false
@@ -168,15 +172,19 @@ if can_move = true{
     if keyboard_check(ord("X")){
         if can_swing = true{
             if up = true{
+                sprite_assign(Sp_Smash, Sp_UpSmash)
                 instance_create(x, y-16, Ob_Smash)
             }
             if down = true{
+                sprite_assign(Sp_Smash, Sp_DownSmash)
                 instance_create(x, y+16, Ob_Smash)
             }
             if right = true{
+                sprite_assign(Sp_Smash, Sp_RightSmash)
                 instance_create(x + 16, y, Ob_Smash)
             }
             if left = true{
+                sprite_assign(Sp_Smash, Sp_LeftSmash)
                 instance_create(x - 16, y, Ob_Smash)
             }
             can_swing = false
@@ -192,6 +200,32 @@ if can_move = true{
     image_speed = 0.4}
 }
 </string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Ob_All_Walls">
+      <action>
+        <libid>1</libid>
+        <id>101</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_move</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>000010000</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
           </argument>
         </arguments>
       </action>
@@ -325,32 +359,6 @@ player_y = other.target_y;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="Ob_Wall">
-      <action>
-        <libid>1</libid>
-        <id>101</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_move</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>000010000</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="7" enumb="4">
       <action>
         <libid>1</libid>
@@ -377,7 +385,7 @@ y = player_y;
       </action>
     </event>
   </events>
-  <PhysicsObject>-1</PhysicsObject>
+  <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>1</PhysicsObjectShape>
   <PhysicsObjectDensity>0.5</PhysicsObjectDensity>
@@ -388,10 +396,5 @@ y = player_y;
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints>
-    <point>0,16</point>
-    <point>32,16</point>
-    <point>32,48</point>
-    <point>0,48</point>
-  </PhysicsShapePoints>
+  <PhysicsShapePoints/>
 </object>

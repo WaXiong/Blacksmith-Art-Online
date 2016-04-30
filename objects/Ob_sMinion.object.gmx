@@ -6,7 +6,7 @@
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>Ob_softEnemies</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>spr_monsterCollision</maskName>
   <events/>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>

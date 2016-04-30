@@ -9,13 +9,27 @@
     <sound>sound\loving_you</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\Sp_UpSwing</sprite>
-    <sprite>sprites\Sp_Smash</sprite>
     <sprite>sprites\Sp_Wall</sprite>
-    <sprite>sprites\Sp_Cave</sprite>
+    <sprite>sprites\Sp_BridgeWall</sprite>
+    <sprite>sprites\p</sprite>
     <sprite>sprites\Sp_Health</sprite>
     <sprite>sprites\Sp_Indoor</sprite>
+    <sprites name="Swings">
+      <sprite>sprites\Sp_Swing</sprite>
+      <sprite>sprites\Sp_UpSwing</sprite>
+      <sprite>sprites\Sp_DownSwing</sprite>
+      <sprite>sprites\Sp_RightSwing</sprite>
+      <sprite>sprites\Sp_LeftSwing</sprite>
+    </sprites>
+    <sprites name="Smash">
+      <sprite>sprites\Sp_Smash</sprite>
+      <sprite>sprites\Sp_UpSmash</sprite>
+      <sprite>sprites\Sp_DownSmash</sprite>
+      <sprite>sprites\Sp_RightSmash</sprite>
+      <sprite>sprites\Sp_LeftSmash</sprite>
+    </sprites>
     <sprites name="monsters">
+      <sprite>sprites\spr_monsterCollision</sprite>
       <sprite>sprites\spr_mon2_up</sprite>
       <sprite>sprites\spr_mon2_right</sprite>
       <sprite>sprites\spr_mon2_left</sprite>
@@ -44,17 +58,24 @@
       <sprite>sprites\spr_down</sprite>
       <sprite>sprites\spr_up</sprite>
     </sprites>
+    <sprites name="Trees">
+      <sprite>sprites\Sp_TreeRed</sprite>
+      <sprite>sprites\Sp_Tree</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\Bg_Main</background>
     <background>background\Bg_Cave</background>
     <background>background\Bg_Splash</background>
     <background>background\background3</background>
+    <background>background\background11</background>
     <background>background\background4</background>
     <background>background\background5</background>
     <background>background\background6</background>
     <background>background\background7</background>
+    <background>background\background9</background>
     <background>background\background8</background>
+    <background>background\background10</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -69,7 +90,16 @@
   <objects name="objects">
     <object>objects\Ob_GameController</object>
     <object>objects\Ob_Health</object>
-    <object>objects\Ob_Wall</object>
+    <objects name="Stuctures">
+      <object>objects\Ob_StillStructures</object>
+      <object>objects\Ob_Tree</object>
+      <object>objects\Ob_TreeRed</object>
+    </objects>
+    <objects name="Walls">
+      <object>objects\Ob_All_Walls</object>
+      <object>objects\Ob_BridgeWall</object>
+      <object>objects\Ob_Wall</object>
+    </objects>
     <objects name="Player">
       <object>objects\Ob_Char</object>
       <object>objects\Ob_Slash</object>
