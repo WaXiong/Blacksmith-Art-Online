@@ -132,7 +132,7 @@
     <instance objName="Ob_Wall" x="128" y="720" name="inst_9BDE6CA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ob_Wall" x="118" y="736" name="inst_97EEEF35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ob_Wall" x="112" y="752" name="inst_1A66568E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Ob_Wall" x="719" y="635" name="inst_265F8FB8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_Wall" x="720" y="631" name="inst_265F8FB8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ob_Wall" x="624" y="568" name="inst_ECE5E717" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ob_Wall" x="496" y="272" name="inst_CCAD9B9D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ob_Wall" x="480" y="256" name="inst_3E8D7D8F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -189,7 +189,7 @@
     <instance objName="Ob_Wall" x="624" y="240" name="inst_225AC298" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ob_BridgeWall" x="672" y="368" name="inst_971A9B4B" locked="0" code="" scaleX="-5" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="Ob_BridgeWall" x="713" y="502" name="inst_8D9EE6B1" locked="0" code="" scaleX="-1" scaleY="4.19999980926514" colour="4294967295" rotation="0"/>
-    <instance objName="Ob_Door" x="560" y="215" name="inst_C401E313" locked="0" code="targetRoom = Rm_Forest;&#xA;target_x = 512; &#xA;target_y = 720;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_Door" x="560" y="215" name="inst_C401E313" locked="0" code="targetRoom = Rm_Forest;&#xA;target_x = 528; &#xA;target_y = 720;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ob_Door" x="848" y="311" name="inst_EB8DD42A" locked="0" code="targetRoom = Rm_Cave;&#xA;target_x = 512; &#xA;target_y = 672;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ob_Wall" x="16" y="400" name="inst_CA030AC4" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="Ob_Wall" x="96" y="560" name="inst_CB5A000F" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
@@ -214,7 +214,7 @@
     <instance objName="Ob_BridgeWall" x="961" y="520" name="inst_B7D87A0B" locked="0" code="" scaleX="-5" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="Ob_BridgeWall" x="1016" y="549" name="inst_25C99453" locked="0" code="" scaleX="-5" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="Ob_Wall" x="696" y="486" name="inst_B07EE75C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Ob_Wall" x="736" y="648" name="inst_22631481" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_Wall" x="736" y="640" name="inst_22631481" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ob_Wall" x="939" y="736" name="inst_EEEF8883" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ob_Wall" x="939" y="752" name="inst_A134DC4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ob_Wall" x="64" y="768" name="inst_9BBDAA99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -494,6 +494,7 @@
     <instance objName="Ob_Wall" x="166" y="693" name="inst_61C3841C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ob_Wall" x="215" y="673" name="inst_5A601BB0" locked="0" code="" scaleX="1.47000002861023" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ob_Wall" x="384" y="634" name="inst_5B527A0C" locked="0" code="" scaleX="15.0666666030884" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_GameController" x="352" y="-96" name="inst_52707D8D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background10" x="336" y="0" w="128" h="240" xo="64" yo="0" id="10005154" name="inst_C2D7E473" depth="1000011" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

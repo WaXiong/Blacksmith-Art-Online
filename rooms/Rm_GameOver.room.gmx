@@ -52,8 +52,8 @@
   </views>
   <instances>
     <instance objName="Obj_TextLabel" x="320" y="64" name="inst_AE5AF2F5" locked="0" code="labelFont = titleScreenFont;&#xA;labelColor = c_white;&#xA;labelText = &quot;Game Over&quot;;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Obj_TextLabel" x="320" y="224" name="inst_8437DED4" locked="0" code="labelFont = regularTextFont;&#xA;labelColor = c_white;&#xA;labelText = &quot;Press enter to restart.&quot;;&#xA;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Obj_TextLabel" x="320" y="256" name="inst_71BD872D" locked="0" code="labelFont = regularTextFont;&#xA;labelColor = c_white;&#xA;labelText = &quot;Press escape to exit.&quot;;&#xA;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Obj_TextLabel" x="320" y="224" name="inst_8437DED4" locked="0" code="labelFont = regularTextFont;&#xA;labelColor = c_white;&#xA;labelText = &quot;Press enter to restart.&quot;;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Obj_TextLabel" x="320" y="256" name="inst_71BD872D" locked="0" code="labelFont = regularTextFont;&#xA;labelColor = c_white;&#xA;labelText = &quot;Press escape to exit.&quot;;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
