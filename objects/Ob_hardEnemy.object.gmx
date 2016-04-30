@@ -30,6 +30,8 @@ is_hit = false;
 can_move = true;
 health = 2;
 
+
+hEnemy = Ob_hardEnemy;
 </string>
           </argument>
         </arguments>
@@ -125,13 +127,13 @@ if can_move = true{
 
 // minion depth
 // is working but it keeps checking all instances instead of the one at hand
-if (Ob_hardEnemy.y &gt; Ob_Char.y)
+if (hEnemy.y &gt; Ob_Char.y)
 {
-    depth = Ob_Char.y - Ob_hardEnemy.y;
+    depth = Ob_Char.y - hEnemy.y;
 }
 else 
 {
-    depth = Ob_Char.y + Ob_hardEnemy.y;
+    depth = Ob_Char.y + hEnemy.y;
 }
 </string>
           </argument>

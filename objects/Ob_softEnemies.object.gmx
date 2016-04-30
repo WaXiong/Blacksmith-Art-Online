@@ -27,9 +27,10 @@
             <kind>1</kind>
             <string>//mob stats
 is_hit = false;
-can_move = true;
+movable = true;
 health = 2;
 
+sEnemy = Ob_softEnemies;
 
 
 </string>
@@ -78,7 +79,7 @@ is_hit = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>can_move = true
+            <string>movable = true
 </string>
           </argument>
         </arguments>
@@ -107,8 +108,8 @@ is_hit = false;
 mp_potential_step(Ob_Char.x, Ob_Char.y, 2, false)
 */
 //minion movement
-if can_move = true{
-    can_move = false
+if (movable == true){
+    movable = false;
     if(point_distance(x, y, Ob_Char.x, Ob_Char.y) &lt; 200)
     {
         move_towards_point(Ob_Char.x, Ob_Char.y, 4);
@@ -123,13 +124,13 @@ if can_move = true{
 }
 // minion depth
 // is working but it keeps checking all instances instead of the one at hand
-if (Ob_softEnemies.y &gt; Ob_Char.y)
+if (sEnemy.y &gt; Ob_Char.y)
 {
-    depth = Ob_Char.y - Ob_softEnemies.y;
+    depth = Ob_Char.y - sEnemy.y;
 }
 else 
 {
-    depth = Ob_Char.y + Ob_softEnemies.y;
+    depth = Ob_Char.y + sEnemy.y;
 }
 </string>
           </argument>
