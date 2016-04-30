@@ -59,6 +59,8 @@
       <sprite>sprites\spr_up</sprite>
     </sprites>
     <sprites name="Trees">
+      <sprite>sprites\Sp_HealthTree</sprite>
+      <sprite>sprites\Sp_HealthUpTree</sprite>
       <sprite>sprites\Sp_BigTree</sprite>
       <sprite>sprites\Sp_TreeRed</sprite>
       <sprite>sprites\Sp_Tree</sprite>
@@ -96,6 +98,8 @@
       <object>objects\Ob_BigTree</object>
       <object>objects\Ob_Tree</object>
       <object>objects\Ob_TreeRed</object>
+      <object>objects\Ob_HealthUpTree</object>
+      <object>objects\Ob_HealthTree</object>
     </objects>
     <objects name="Walls">
       <object>objects\Ob_All_Walls</object>
