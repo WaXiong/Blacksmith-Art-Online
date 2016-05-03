@@ -9,11 +9,18 @@
     <sound>sound\loving_you</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\Sp_Wall</sprite>
-    <sprite>sprites\Sp_BridgeWall</sprite>
-    <sprite>sprites\p</sprite>
+    <sprite>sprites\sprite46</sprite>
+    <sprite>sprites\Sp_AirBubble</sprite>
     <sprite>sprites\Sp_Health</sprite>
-    <sprite>sprites\Sp_Indoor</sprite>
+    <sprite>sprites\Sp_Bubble</sprite>
+    <sprites name="Doors">
+      <sprite>sprites\p</sprite>
+      <sprite>sprites\Sp_Indoor</sprite>
+      <sprite>sprites\Sp_Wall</sprite>
+      <sprite>sprites\Sp_BridgeWall</sprite>
+      <sprite>sprites\Sp_WhirlPoolIn</sprite>
+      <sprite>sprites\Sp_WhrilPoolOut</sprite>
+    </sprites>
     <sprites name="Swings">
       <sprite>sprites\Sp_Swing</sprite>
       <sprite>sprites\Sp_UpSwing</sprite>
@@ -71,6 +78,7 @@
     <background>background\Bg_Cave</background>
     <background>background\Bg_Splash</background>
     <background>background\background3</background>
+    <background>background\background17</background>
     <background>background\background11</background>
     <background>background\background4</background>
     <background>background\background5</background>
@@ -78,7 +86,10 @@
     <background>background\background7</background>
     <background>background\background9</background>
     <background>background\background8</background>
-    <background>background\background10</background>
+    <background>background\Water_tiles</background>
+    <background>background\Underwater_Tiles</background>
+    <background>background\Bg_MovingUnderWater</background>
+    <background>background\Bg_WaterFloor</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -93,6 +104,9 @@
   <objects name="objects">
     <object>objects\Ob_GameController</object>
     <object>objects\Ob_Health</object>
+    <object>objects\Ob_Bubble</object>
+    <object>objects\Ob_Shine</object>
+    <object>objects\Ob_Air</object>
     <objects name="Stuctures">
       <object>objects\Ob_StillStructures</object>
       <object>objects\Ob_BigTree</object>
@@ -121,6 +135,8 @@
       <object>objects\Ob_mainDoor</object>
       <object>objects\Ob_Room_Trans</object>
       <object>objects\Ob_Indoor</object>
+      <object>objects\Ob_WhirlPooln</object>
+      <object>objects\Ob_WhrilPoolOut</object>
       <object>objects\Ob_Door</object>
     </objects>
     <objects name="Rm_Init">
@@ -139,6 +155,8 @@
     <room>rooms\Rm_Init</room>
     <room>rooms\Rm_CreateCharacter</room>
     <room>rooms\Rm_Main</room>
+    <room>rooms\Rm_Water</room>
+    <room>rooms\Rm_WaterTrans</room>
     <room>rooms\Rm_Cave</room>
     <room>rooms\Rm_Forest</room>
     <room>rooms\Rm_GameOver</room>

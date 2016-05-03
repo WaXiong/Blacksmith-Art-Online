@@ -197,8 +197,12 @@ if can_move = true{
     image_index = 0;
     }
     else{
-    image_speed = 0.4}
+    image_speed = 0.4
+    }
 }
+
+
+
 </string>
           </argument>
         </arguments>
