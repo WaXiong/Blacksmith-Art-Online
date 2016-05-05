@@ -27,9 +27,36 @@
             <kind>1</kind>
             <string>//D stats
 can_shoot = true;
-dragon_hp = 8;
+is_hit = false;
 
-fire_speed = 5; //Shots per fire_speed seconds
+dragon_hp = 12;
+
+fire_speed = 3; //One shot every fire_speed seconds
+
+stun = 5; // 5 sec window to hit dragon
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>is_hit = false;
 
 </string>
           </argument>
@@ -91,6 +118,93 @@ if (can_shoot == true)
         instance_create(Ob_Dragon.x + 20 , Ob_Dragon.y, Ob_LavaBall);
     }
     alarm [0] = (room_speed * fire_speed);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Ob_LavaBall">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>can_shoot = false;
+alarm [0] = (room_speed * stun);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Ob_Smash">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (is_hit == false)
+{
+    is_hit = true;
+    dragon_hp = dragon_hp - 1;
+    alarm [1] = 5;
+    soften = true;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Ob_Slash">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (is_hit == false)
+{
+    is_hit = true;
+    if (soften == true){
+        soften = false;
+        dragon_hp = dragon_hp - 2;
+    }
+    else{
+        dragon_hp = dragon_hp - 1;
+    }
+    alarm [1] = 5;
 }
 </string>
           </argument>

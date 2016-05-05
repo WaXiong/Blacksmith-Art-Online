@@ -72,9 +72,11 @@
       <sprite>sprites\Sp_TreeRed</sprite>
       <sprite>sprites\Sp_Tree</sprite>
     </sprites>
-    <sprite>sprites\Sp_FireBall</sprite>
-    <sprite>sprites\Sp_LavaBall</sprite>
-    <sprite>sprites\Sp_Dragon</sprite>
+    <sprites name="Dragon">
+      <sprite>sprites\Sp_Dragon</sprite>
+      <sprite>sprites\Sp_LavaBall</sprite>
+      <sprite>sprites\Sp_FireBall</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\Bg_Main</background>
@@ -105,9 +107,11 @@
     <font>fonts\regularTextFont</font>
   </fonts>
   <objects name="objects">
-    <object>objects\Ob_FireBall</object>
-    <object>objects\Ob_LavaBall</object>
-    <object>objects\Ob_Dragon</object>
+    <objects name="Dragon">
+      <object>objects\Ob_Dragon</object>
+      <object>objects\Ob_FireBall</object>
+      <object>objects\Ob_LavaBall</object>
+    </objects>
     <object>objects\Ob_Shine</object>
     <object>objects\Ob_Air</object>
     <objects name="GameController and parts">
