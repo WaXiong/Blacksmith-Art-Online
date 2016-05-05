@@ -107,13 +107,20 @@ invincible = 3;
             <kind>1</kind>
             <string>
 // checks if player can regain air
-if ((global.bubble &lt; global.max_bubble) &amp;&amp; (global.in_water = false))
+if ((global.bubble &lt;= global.max_bubble) &amp;&amp; (global.in_water = false))
 {
-    global.bubble = global.bubble + 0.5;
+    if (global.bubble == global.max_bubble)
+    {
+        global.bubble = global.bubble + 0;
+    }
+    else
+    {
+        global.bubble = global.bubble + 0.5;
+    }
 }
 
 //check to see if you are breating and how long you have
-if ((global.bubble &gt; 0) &amp;&amp; (breathing = false))
+else if ((global.bubble &gt; 0) &amp;&amp; (breathing = false))
 {
     breathing = true;
     global.bubble = global.bubble - 1;
@@ -198,10 +205,11 @@ else if ((global.bubble == 0) &amp;&amp; (is_hit == false))
             <kind>1</kind>
             <string>//draw health
 //(heart,bar_length,hp,max_hp,bar_x,bar_y,xoffset,yoffset)
-if ((global.bubble != global.max_bubble)|| (global.in_water = true))
+if ((global.bubble &lt;= global.max_bubble) || (global.in_water = true))
 {
     Scp_Health(Sp_Bubble, 9, global.bubble, global.max_bubble, 176, 32, 1, 1);
 }
+
 </string>
           </argument>
         </arguments>

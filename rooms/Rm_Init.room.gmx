@@ -56,6 +56,7 @@
     <instance objName="Obj_TextLabel" x="320" y="192" name="inst_2FD8EF95" locked="0" code="labelFont = regularTextFont;&#xA;labelColor = c_white;&#xA;labelText = &quot;Press C to create your character!&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Obj_TextLabel" x="320" y="64" name="inst_AE5AF2F5" locked="0" code="labelFont = titleScreenFont;&#xA;labelColor = c_white;&#xA;labelText = &quot;Blacksmith Art Online&quot;;&#xA;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ob_GameController" x="128" y="32" name="inst_D8E07CDD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_HealthInt" x="32" y="96" name="inst_384BDDAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

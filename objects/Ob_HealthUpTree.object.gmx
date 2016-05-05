@@ -100,7 +100,7 @@ alarm[0] = 15;
             <kind>1</kind>
             <string>if (breakable == true)
 {
-    global.max_hp = global.max_hp + 1;
+    global.max_hp = global.max_hp + 4;
     global.hp += 4;
     
     instance_destroy();

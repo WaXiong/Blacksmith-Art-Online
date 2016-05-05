@@ -42,13 +42,13 @@
   </backgrounds>
   <views>
     <view visible="-1" objName="Ob_Char" xview="300" yview="300" wview="512" hview="384" xport="0" yport="0" wport="1024" hport="768" hborder="200" vborder="200" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
     <instance objName="Ob_Indoor" x="528" y="752" name="inst_9307E10D" locked="0" code="targetRoom = Rm_WaterTrans;&#xA;target_x = 320;&#xA;target_y = 416;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -106,7 +106,15 @@
     <instance objName="Ob_Shine" x="592" y="640" name="inst_FB8114A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ob_Shine" x="256" y="544" name="inst_3B733571" locked="0" code="" scaleX="0.571428596973419" scaleY="0.583333313465118" colour="4294967295" rotation="0"/>
     <instance objName="Ob_Shine" x="768" y="544" name="inst_2E3E6885" locked="0" code="" scaleX="0.571428596973419" scaleY="0.583333313465118" colour="4294967295" rotation="0"/>
-    <instance objName="Ob_Air" x="528" y="352" name="inst_FB1CBE0E" locked="0" code="" scaleX="0.142857149243355" scaleY="0.25" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_Air" x="320" y="128" name="inst_FB1CBE0E" locked="0" code="" scaleX="0.5" scaleY="0.625" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_Air" x="832" y="304" name="inst_60B893C2" locked="0" code="" scaleX="0.5" scaleY="0.625" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_Air" x="192" y="304" name="inst_66C28BD2" locked="0" code="" scaleX="0.5" scaleY="0.625" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_Air" x="256" y="544" name="inst_96C88844" locked="0" code="" scaleX="0.5" scaleY="0.625" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_Air" x="768" y="528" name="inst_7119210D" locked="0" code="" scaleX="0.5" scaleY="0.625" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_Air" x="704" y="144" name="inst_D3C9AFA7" locked="0" code="" scaleX="0.5" scaleY="0.625" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_Air" x="512" y="16" name="inst_D5D53A61" locked="0" code="" scaleX="0.5" scaleY="0.625" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_Air" x="496" y="672" name="inst_53C8A362" locked="0" code="" scaleX="0.5" scaleY="0.625" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_Air" x="592" y="672" name="inst_EF3184E4" locked="0" code="" scaleX="0.5" scaleY="0.625" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background6" x="848" y="640" w="32" h="32" xo="272" yo="240" id="10006466" name="inst_F607F3C5" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -396,6 +404,7 @@
     <tile bgName="background7" x="592" y="272" w="32" h="48" xo="16" yo="32" id="10006493" name="inst_95115133" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background7" x="448" y="272" w="32" h="48" xo="16" yo="32" id="10006494" name="inst_6569D1EB" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background7" x="512" y="400" w="16" h="16" xo="32" yo="48" id="10006500" name="inst_4D308066" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background17" x="816" y="672" w="32" h="32" xo="0" yo="0" id="10006763" name="inst_E39FBDCB" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background7" x="528" y="752" w="32" h="16" xo="144" yo="144" id="10005834" name="inst_9642C42E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background6" x="560" y="736" w="16" h="32" xo="320" yo="256" id="10005846" name="inst_693A516B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background6" x="512" y="736" w="16" h="32" xo="368" yo="256" id="10005847" name="inst_84853C47" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

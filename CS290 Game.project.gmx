@@ -103,6 +103,7 @@
   </fonts>
   <objects name="objects">
     <object>objects\Ob_GameController</object>
+    <object>objects\Ob_HealthInt</object>
     <object>objects\Ob_Health</object>
     <object>objects\Ob_Bubble</object>
     <object>objects\Ob_Shine</object>
