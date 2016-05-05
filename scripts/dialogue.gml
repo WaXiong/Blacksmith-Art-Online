@@ -13,7 +13,7 @@ if (instance_find(Ob_DialogueBox, 0) == noone) {
         100,
         Ob_DialogueBox);
 } else {
-    dialog = instance_find(Ob_DialogueBox, 1);
+    dialog = instance_find(Ob_DialogueBox, 0);
     instance_place(
         0, 
         100,

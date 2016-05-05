@@ -26,7 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>if global.gameStarted {
-    if global.hp == 0 &amp;&amp; room != Rm_GameOver {      
+    if global.hp == 0 &amp;&amp; room != Rm_GameOver {     
+        global.deathRoom = room; 
         roomfadetransition(Rm_GameOver); //when the player dies, go to the game over screen.
     }
 }
@@ -151,6 +152,30 @@ global.gameStarted = false;
         </arguments>
       </action>
     </event>
+    <event eventtype="10" enumb="57">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>dialogue("GOTTA GO FAST!");
+room_speed *= 2;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="10" enumb="27">
       <action>
         <libid>1</libid>
@@ -181,6 +206,8 @@ global.gameStarted = false;
     global.gamePaused = false;
     
     instance_activate_all();
+} else if room == Rm_GameOver {
+    game_restart();
 }
 </string>
           </argument>
@@ -205,7 +232,10 @@ global.gameStarted = false;
           <argument>
             <kind>1</kind>
             <string>if room == Rm_GameOver {
-    game_restart();
+    global.hp = 12;
+    room_goto(global.deathRoom);
+    //room_restart();
+    global.deathRoom = noone;
 }
 </string>
           </argument>

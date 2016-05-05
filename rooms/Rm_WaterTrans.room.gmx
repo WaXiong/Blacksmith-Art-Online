@@ -70,8 +70,6 @@
     <instance objName="Ob_WhrilPoolOut" x="800" y="400" name="inst_036F8FAC" locked="0" code="targetRoom = Rm_Main;&#xA;target_x = 992;&#xA;target_y = 743;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ob_GameController" x="256" y="352" name="inst_ED9B013D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ob_Bubble" x="240" y="352" name="inst_F8A69272" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="560" y="656" name="inst_5BB43CB5" locked="0" code="" scaleX="0.571428596973419" scaleY="0.583333313465118" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="288" y="416" name="inst_DA6144A5" locked="0" code="" scaleX="0.28571429848671" scaleY="0.333333343267441" colour="4294967295" rotation="0"/>
     <instance objName="Ob_Wall" x="279" y="410" name="inst_937F2035" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ob_Air" x="560" y="640" name="inst_FAE3ACB6" locked="0" code="" scaleX="0.785714268684387" scaleY="0.75" colour="4294967295" rotation="0"/>
     <instance objName="Ob_Air" x="288" y="384" name="inst_48D5E236" locked="0" code="" scaleX="0.46428570151329" scaleY="0.666666686534882" colour="4294967295" rotation="0"/>
