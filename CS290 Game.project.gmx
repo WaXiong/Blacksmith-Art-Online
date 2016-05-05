@@ -72,6 +72,9 @@
       <sprite>sprites\Sp_TreeRed</sprite>
       <sprite>sprites\Sp_Tree</sprite>
     </sprites>
+    <sprite>sprites\Sp_FireBall</sprite>
+    <sprite>sprites\Sp_LavaBall</sprite>
+    <sprite>sprites\Sp_Dragon</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Bg_Main</background>
@@ -102,12 +105,17 @@
     <font>fonts\regularTextFont</font>
   </fonts>
   <objects name="objects">
-    <object>objects\Ob_GameController</object>
-    <object>objects\Ob_HealthInt</object>
-    <object>objects\Ob_Health</object>
-    <object>objects\Ob_Bubble</object>
+    <object>objects\Ob_FireBall</object>
+    <object>objects\Ob_LavaBall</object>
+    <object>objects\Ob_Dragon</object>
     <object>objects\Ob_Shine</object>
     <object>objects\Ob_Air</object>
+    <objects name="GameController and parts">
+      <object>objects\Ob_GameController</object>
+      <object>objects\Ob_HealthInt</object>
+      <object>objects\Ob_Health</object>
+      <object>objects\Ob_Bubble</object>
+    </objects>
     <objects name="Stuctures">
       <object>objects\Ob_StillStructures</object>
       <object>objects\Ob_BigTree</object>
