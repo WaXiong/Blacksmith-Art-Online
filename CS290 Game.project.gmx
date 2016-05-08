@@ -77,6 +77,17 @@
       <sprite>sprites\Sp_LavaBall</sprite>
       <sprite>sprites\Sp_FireBall</sprite>
     </sprites>
+    <sprites name="window">
+      <sprite>sprites\spr_window_tl</sprite>
+      <sprite>sprites\spr_window_t</sprite>
+      <sprite>sprites\spr_window_tr</sprite>
+      <sprite>sprites\spr_window_l</sprite>
+      <sprite>sprites\spr_window_r</sprite>
+      <sprite>sprites\spr_window_bl</sprite>
+      <sprite>sprites\spr_window_bot</sprite>
+      <sprite>sprites\spr_window_br</sprite>
+      <sprite>sprites\spr_window_base</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\Bg_Main</background>
@@ -90,11 +101,12 @@
     <background>background\background6</background>
     <background>background\background7</background>
     <background>background\background9</background>
-    <background>background\background8</background>
     <background>background\Water_tiles</background>
     <background>background\Underwater_Tiles</background>
     <background>background\Bg_MovingUnderWater</background>
     <background>background\Bg_WaterFloor</background>
+    <background>background\background16</background>
+    <background>background\background18</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -163,8 +175,12 @@
       <object>objects\Ob_DialogueBox</object>
       <object>objects\Obj_TextLabel</object>
     </objects>
+    <objects name="Window">
+      <object>objects\ob_window_base</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_window</room>
     <room>rooms\Rm_Init</room>
     <room>rooms\Rm_CreateCharacter</room>
     <room>rooms\Rm_Main</room>
