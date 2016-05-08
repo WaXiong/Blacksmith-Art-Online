@@ -88,6 +88,7 @@
       <sprite>sprites\spr_window_br</sprite>
       <sprite>sprites\spr_window_base</sprite>
     </sprites>
+    <sprite>sprites\spr_portrait</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Bg_Main</background>
@@ -108,7 +109,9 @@
     <background>background\background16</background>
     <background>background\background18</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path0</path>
+  </paths>
   <scripts name="scripts">
     <script>scripts\dialogue.gml</script>
     <script>scripts\roomfadetransition.gml</script>
@@ -174,6 +177,7 @@
       <object>objects\Obj_TextBox</object>
       <object>objects\Ob_DialogueBox</object>
       <object>objects\Obj_TextLabel</object>
+      <object>objects\obj_dialogue</object>
     </objects>
     <objects name="Window">
       <object>objects\ob_window_base</object>

@@ -51,7 +51,7 @@
             <string>if (start == true){
     image_speed = lerp(target_xscale, target_yscale, 0.4);
     
-    progress = image_yscale / target_yscale
+    progress = image_yscale / target_yscale;
     y = lerp(start_y, target_y, progress);
 }
 </string>
@@ -108,7 +108,7 @@ start = true;
             <string>/// draw_window
 
 /// draw_background
-draw_sprite_stretched(spr_window_base,0,x,y,sprite_width,sprite_height);
+draw_sprite_stretched_ext(spr_window_base,0,x,y,sprite_width,sprite_height,c_blue,0.6);
 
 /// draw_XY
 draw_sprite_stretched(spr_window_t,0,x+8,y,sprite_width-16,16);
