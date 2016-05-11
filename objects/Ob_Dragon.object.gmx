@@ -29,7 +29,7 @@
 can_shoot = true;
 is_hit = false;
 
-dragon_hp = 12;
+dragon_hp = 40;
 soften = false;
 
 fire_speed = 0.3; //One shot every fire_speed seconds
@@ -110,7 +110,7 @@ stun = 5; // 5 sec window to hit dragon
     instance_destroy();
 }
 
-if (dragon_hp &lt;= 4)
+if (dragon_hp &lt;= 10)
 {
     fire_speed = 0.1;
 }
