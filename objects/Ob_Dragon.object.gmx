@@ -30,8 +30,9 @@ can_shoot = true;
 is_hit = false;
 
 dragon_hp = 12;
+soften = false;
 
-fire_speed = 0.2; //One shot every fire_speed seconds
+fire_speed = 0.3; //One shot every fire_speed seconds
 
 stun = 5; // 5 sec window to hit dragon
 
@@ -104,7 +105,16 @@ stun = 5; // 5 sec window to hit dragon
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if (dragon_hp &lt;= 0)
+{
+    instance_destroy();
+}
+
+if (dragon_hp &lt;= 4)
+{
+    fire_speed = 0.1;
+}
+
     hitter = irandom(3);
 
 if (can_shoot == true)
@@ -120,6 +130,8 @@ if (can_shoot == true)
     }
     alarm [0] = (room_speed * fire_speed);
 }
+
+
 </string>
           </argument>
         </arguments>
