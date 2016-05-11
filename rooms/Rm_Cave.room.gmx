@@ -91,6 +91,19 @@
     <instance objName="Ob_Wall" x="432" y="64" name="inst_86235135" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ob_Wall" x="512" y="64" name="inst_4EF5BBBE" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="Ob_Dragon" x="480" y="96" name="inst_5119B262" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_sbat" x="128" y="384" name="inst_42DB30B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_sbat" x="704" y="512" name="inst_5CA6DD98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_sbat" x="320" y="672" name="inst_D767D47C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_sbat" x="736" y="96" name="inst_14031242" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_sbat" x="160" y="64" name="inst_D57460EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_sbat" x="928" y="384" name="inst_221C806D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_sbat" x="448" y="416" name="inst_BD9AC108" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_hdevil" x="320" y="288" name="inst_9009AB48" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_hdevil" x="896" y="480" name="inst_642B5F7E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_hdevil" x="96" y="640" name="inst_E7D2D23F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_hdevil" x="832" y="128" name="inst_06740B28" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_hdevil" x="64" y="96" name="inst_6114A33D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_hdevil" x="736" y="672" name="inst_C0A548A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background6" x="32" y="0" w="32" h="32" xo="208" yo="224" id="10003123" name="inst_8761825E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

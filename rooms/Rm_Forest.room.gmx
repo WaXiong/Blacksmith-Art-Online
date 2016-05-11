@@ -91,6 +91,19 @@
     <instance objName="Ob_Wall" x="944" y="496" name="inst_27F6FABD" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ob_Wall" x="966" y="511" name="inst_5BECBA7A" locked="0" code="" scaleX="1.33333337306976" scaleY="1.55999994277954" colour="4294967295" rotation="0"/>
     <instance objName="Ob_Wall" x="960" y="384" name="inst_3406E79E" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_stroll" x="176" y="512" name="inst_782869AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_stroll" x="784" y="368" name="inst_E57BBA3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_stroll" x="656" y="80" name="inst_15CEB17D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_stroll" x="288" y="176" name="inst_A1AFB7A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_stroll" x="848" y="656" name="inst_E06F6ACE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_stroll" x="416" y="384" name="inst_19248728" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_stroll" x="64" y="256" name="inst_69838C0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_stroll" x="864" y="160" name="inst_5716C3E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_stroll" x="336" y="672" name="inst_601396DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_hMinion" x="288" y="496" name="inst_824C1822" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_hMinion" x="848" y="224" name="inst_C7421F91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_hMinion" x="112" y="96" name="inst_D0CF900A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_hMinion" x="592" y="512" name="inst_367CB420" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background3" x="0" y="704" w="64" h="64" xo="0" yo="0" id="10005649" name="inst_6EB86083" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

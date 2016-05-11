@@ -115,6 +115,14 @@
     <instance objName="Ob_Air" x="512" y="16" name="inst_D5D53A61" locked="0" code="" scaleX="0.5" scaleY="0.625" colour="4294967295" rotation="0"/>
     <instance objName="Ob_Air" x="496" y="672" name="inst_53C8A362" locked="0" code="" scaleX="0.5" scaleY="0.625" colour="4294967295" rotation="0"/>
     <instance objName="Ob_Air" x="592" y="672" name="inst_EF3184E4" locked="0" code="" scaleX="0.5" scaleY="0.625" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_hthingy" x="160" y="608" name="inst_49C05FF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_hthingy" x="112" y="448" name="inst_2BBB5B7B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_hthingy" x="208" y="64" name="inst_DC1476A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_hthingy" x="624" y="64" name="inst_080258E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_hthingy" x="960" y="224" name="inst_CA8EFCFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_hthingy" x="800" y="448" name="inst_9F89BEA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_hthingy" x="704" y="688" name="inst_46398DC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_hthingy" x="416" y="448" name="inst_ABF933F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background6" x="848" y="640" w="32" h="32" xo="272" yo="240" id="10006466" name="inst_F607F3C5" depth="1000002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
