@@ -31,7 +31,7 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="Bg_MovingUnderWater" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -52,9 +52,9 @@
   </views>
   <instances>
     <instance objName="Obj_Rm_CreateCharacter" x="352" y="96" name="inst_302833E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Obj_TextBox" x="352" y="288" name="inst_AA7218E0" locked="0" code="enteredText = global.playerName;&#xA;keyboard_string = global.playerName;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Obj_TextLabel" x="352" y="256" name="inst_77381EDE" locked="0" code="labelText = &quot;Enter the name of your character:&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Obj_TextLabel" x="352" y="320" name="inst_A4C7B559" locked="0" code="labelText = &quot;When you're done, press enter!&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Obj_TextBox" x="128" y="288" name="inst_AA7218E0" locked="0" code="enteredText = global.playerName;&#xA;keyboard_string = global.playerName;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dialogue" x="128" y="256" name="inst_ED6ED11D" locked="0" code="message[0] = &quot;Enter the name of your character =&gt;&quot;;&#xA;message[1] = &quot;When you're done, press enter!&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_window_base" x="64" y="192" name="inst_091751C3" locked="0" code="" scaleX="14" scaleY="3" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -11,9 +11,9 @@ if (instance_find(Ob_DialogueBox, 0) == noone) {
     dialog = instance_create(
         0, 
         100,
-        Ob_DialogueBox);
+        ob_window_base);
 } else {
-    dialog = instance_find(Ob_DialogueBox, 0);
+    dialog = instance_find(ob_window_base, 0);
     instance_place(
         0, 
         100,

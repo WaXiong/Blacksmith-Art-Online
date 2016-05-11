@@ -52,10 +52,11 @@
   </views>
   <instances>
     <instance objName="Obj_Rm_Init_Screen" x="384" y="0" name="inst_FC51FA5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Obj_TextLabel" x="352" y="512" name="inst_A0BF870C" locked="0" code="labelFont = regularTextFont;&#xA;labelColor = c_white;&#xA;labelText = &quot;Press SPACE to play.&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Obj_TextLabel" x="352" y="576" name="inst_2FD8EF95" locked="0" code="labelFont = regularTextFont;&#xA;labelColor = c_white;&#xA;labelText = &quot;Press C to create your character!&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ob_GameController" x="128" y="32" name="inst_D8E07CDD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ob_HealthInt" x="32" y="96" name="inst_384BDDAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Obj_TextLabel" x="128" y="480" name="inst_AEDF35E6" locked="0" code="labelText = &quot;Press SPACE to play.&quot;;&#xA;labelFont = regularTextFont;&#xA;labelColor = c_white;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Obj_TextLabel" x="128" y="544" name="inst_65971D31" locked="0" code="labelText = &quot;Press C to create your character!&quot;;&#xA;labelFont = regularTextFont;&#xA;labelColor = c_white;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="ob_window_base" x="64" y="416" name="inst_B414CDD3" locked="0" code="" scaleX="14" scaleY="3.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background18" x="0" y="0" w="640" h="320" xo="0" yo="0" id="10007897" name="inst_F8CF5B65" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
