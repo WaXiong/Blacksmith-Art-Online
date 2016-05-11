@@ -25,9 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//stats
-//hit_x = Ob_Char.x;
-//hit_y = Ob_Char.y;
+            <string>//balls stats
+
+sp = 10;
+dir = point_direction(Ob_Dragon.x, Ob_Dragon.y, Ob_Char.x, Ob_Char.y);
+
+//axe hit
+//chance for lava ball return
+axedir = -irandom_range(-20, 20) * 32;
+hamdir = -irandom_range(-10, 10) * 32;
 </string>
           </argument>
         </arguments>
@@ -54,8 +60,6 @@
 //used for making the attack move at the player but not follow
 //commented items are for pseudo code puposes
 
-sp = 10;
-dir = point_direction(Ob_Dragon.x, Ob_Dragon.y, Ob_Char.x, Ob_Char.y);
 
 motion_set(dir, sp);
 
@@ -69,6 +73,54 @@ if(point_distance(x, y, Ob_Dragon.x, Ob_Dragon.y) &gt;= 400)
    
     //image_index = 5 + j;
 }/*
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Ob_Smash">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.knocked = true;
+dir = point_direction(Ob_Char.x, Ob_Char.y, Ob_Dragon.x + axedir, Ob_Dragon.y);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Ob_Slash">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.knocked = true;
+dir = point_direction(Ob_Char.x, Ob_Char.y, Ob_Dragon.x + axedir, Ob_Dragon.y);
 </string>
           </argument>
         </arguments>

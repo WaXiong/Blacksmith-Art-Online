@@ -31,9 +31,10 @@ is_hit = false;
 
 dragon_hp = 12;
 
-fire_speed = 3; //One shot every fire_speed seconds
+fire_speed = 0.2; //One shot every fire_speed seconds
 
 stun = 5; // 5 sec window to hit dragon
+
 </string>
           </argument>
         </arguments>
@@ -104,18 +105,18 @@ stun = 5; // 5 sec window to hit dragon
           <argument>
             <kind>1</kind>
             <string>
-hitter = irandom(3);
+    hitter = irandom(3);
 
 if (can_shoot == true)
 {
     can_shoot = false
-    if ((hitter == 0)||(hitter == 1)||(hitter == 2))
+    if ((hitter &lt;= 2))
     {
-        instance_create(Ob_Dragon.x + 20 , Ob_Dragon.y, Ob_FireBall);
+        instance_create(Ob_Dragon.x , Ob_Dragon.y + 32, Ob_FireBall);
     }
     else 
     {
-        instance_create(Ob_Dragon.x + 20 , Ob_Dragon.y, Ob_LavaBall);
+        instance_create(Ob_Dragon.x , Ob_Dragon.y + 32, Ob_LavaBall);
     }
     alarm [0] = (room_speed * fire_speed);
 }
@@ -204,11 +205,29 @@ if (can_shoot == true)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>can_shoot = false;
-alarm [0] = (room_speed * stun);
+            <string>if (global.knocked = true)
+{
+    can_shoot = false;
+    alarm [0] = (room_speed * stun);
+    //instance_destroy(Ob_LavaBall);
+}
 </string>
           </argument>
         </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>203</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_kill_object</functionname>
+        <codestring></codestring>
+        <whoName>Ob_LavaBall</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
   </events>
