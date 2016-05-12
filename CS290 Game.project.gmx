@@ -115,8 +115,8 @@
   </fonts>
   <objects name="objects">
     <objects name="Skeleton">
-     <object>objects\Ob_SkeletonKing</object>
-     <object>objects\Ob_Skeleton</object>
+      <object>objects\Ob_SkeletonKing</object>
+      <object>objects\Ob_Skeleton</object>
     </objects>
     <objects name="Dragon">
       <object>objects\Ob_Dragon</object>
@@ -124,11 +124,9 @@
       <object>objects\Ob_LavaBall</object>
     </objects>
     <objects name="UnderWater">
-     <object>objects\Ob_Shine</object>
-     <object>objects\Ob_Air2</object>
+      <object>objects\Ob_Shine</object>
+      <object>objects\Ob_Air2</object>
     </objects>
-    <object>objects\Ob_Shine</object>
-    <object>objects\Ob_Air</object>
     <objects name="GameController and parts">
       <object>objects\Ob_GameController</object>
       <object>objects\Ob_HealthInt</object>
