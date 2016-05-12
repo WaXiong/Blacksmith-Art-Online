@@ -36,27 +36,12 @@
       <sprite>sprites\Sp_LeftSmash</sprite>
     </sprites>
     <sprites name="monsters">
-      <sprite>sprites\spr_monsterCollision</sprite>
-      <sprite>sprites\spr_mon2_up</sprite>
-      <sprite>sprites\spr_mon2_right</sprite>
-      <sprite>sprites\spr_mon2_left</sprite>
       <sprite>sprites\spr_mon2_down</sprite>
-      <sprite>sprites\spri_mon1_right</sprite>
-      <sprite>sprites\spr_mon1_up</sprite>
-      <sprite>sprites\spr_mon1_left</sprite>
       <sprite>sprites\spr_mon1_down</sprite>
-      <sprite>sprites\spr_ghost_up</sprite>
-      <sprite>sprites\spr_ghost_right</sprite>
-      <sprite>sprites\spr_ghost_left</sprite>
       <sprite>sprites\spr_ghost_down</sprite>
-      <sprite>sprites\spr_devil_up</sprite>
-      <sprite>sprites\spr_devil_right</sprite>
-      <sprite>sprites\spr_devil_left</sprite>
       <sprite>sprites\spr_devil_down</sprite>
-      <sprite>sprites\spr_bat_up</sprite>
-      <sprite>sprites\spr_bat_right</sprite>
-      <sprite>sprites\spr_bat_left</sprite>
       <sprite>sprites\spr_bat_down</sprite>
+      <sprite>sprites\spr_thingy_down</sprite>
     </sprites>
     <sprites name="player">
       <sprite>sprites\spr_right</sprite>
@@ -88,11 +73,9 @@
       <sprite>sprites\spr_window_br</sprite>
       <sprite>sprites\spr_window_base</sprite>
     </sprites>
-    <sprites name="Skeleton">
-      <sprite>sprites\Sp_SkeletonKing</sprite>
-      <sprite>sprites\Sp_Skeleton</sprite>
-    </sprites>
     <sprite>sprites\spr_portrait</sprite>
+    <sprite>sprites\spr_dragon</sprite>
+    <sprite>sprites\spr_fireball</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Bg_Main</background>
@@ -120,25 +103,20 @@
     <script>scripts\dialogue.gml</script>
     <script>scripts\roomfadetransition.gml</script>
     <script>scripts\Scp_Health.gml</script>
+    <script>scripts\newChat.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\titleScreenFont</font>
     <font>fonts\regularTextFont</font>
   </fonts>
   <objects name="objects">
-    <objects name="Skeleton">
-      <object>objects\Ob_SkeletonKing</object>
-      <object>objects\Ob_Skeleton</object>
-    </objects>
     <objects name="Dragon">
       <object>objects\Ob_Dragon</object>
       <object>objects\Ob_FireBall</object>
       <object>objects\Ob_LavaBall</object>
     </objects>
-    <objects name="UnderWater">
-      <object>objects\Ob_Shine</object>
-      <object>objects\Ob_Air2</object>
-    </objects>
+    <object>objects\Ob_Shine</object>
+    <object>objects\Ob_Air</object>
     <objects name="GameController and parts">
       <object>objects\Ob_GameController</object>
       <object>objects\Ob_HealthInt</object>
@@ -167,7 +145,11 @@
       <object>objects\Ob_softEnemies</object>
       <object>objects\Ob_hardEnemy</object>
       <object>objects\Ob_sMinion</object>
+      <object>objects\Ob_stroll</object>
+      <object>objects\Ob_sbat</object>
       <object>objects\Ob_hMinion</object>
+      <object>objects\Ob_hthingy</object>
+      <object>objects\Ob_hdevil</object>
     </objects>
     <objects name="Doors">
       <object>objects\Ob_mainDoor</object>
@@ -197,6 +179,12 @@
     <room>rooms\Rm_Init</room>
     <room>rooms\Rm_CreateCharacter</room>
     <room>rooms\Rm_Main</room>
+    <room>rooms\Rm_Cave</room>
+    <room>rooms\Rm_Water</room>
+    <room>rooms\Rm_WaterTrans</room>
+    <room>rooms\Rm_Forest</room>
+    <room>rooms\Rm_GameOver</room>
+    <room>rooms\rm_window</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
