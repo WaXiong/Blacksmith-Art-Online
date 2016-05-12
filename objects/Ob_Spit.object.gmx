@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>//dir = ; 
 sp = 10;
-dir = point_direction(Ob_Dragon.x, Ob_Dragon.y, Ob_Char.x, Ob_Char.y);
+dir = point_direction(Ob_TreeRed.x, Ob_TreeRed.y, Ob_Char.x, Ob_Char.y);
 point1 = irandom(3)
 </string>
           </argument>
@@ -57,7 +57,7 @@ if (point1 &lt;= 2)
 {
     instance_create(x, y, Ob_Root);
 }
-if(point_distance(x, y, Ob_Dragon.x, Ob_Dragon.y) &gt;= 400)
+if(point_distance(x, y, Ob_TreeRed.x, Ob_TreeRed.y) &gt;= 400)
 {
     instance_destroy();
 }
