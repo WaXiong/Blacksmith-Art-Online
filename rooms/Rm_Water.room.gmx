@@ -106,7 +106,7 @@
     <instance objName="Ob_Shine" x="256" y="544" name="inst_3B733571" locked="0" code="" scaleX="0.571428596973419" scaleY="0.583333313465118" colour="4294967295" rotation="0"/>
     <instance objName="Ob_Shine" x="768" y="544" name="inst_2E3E6885" locked="0" code="" scaleX="0.571428596973419" scaleY="0.583333313465118" colour="4294967295" rotation="0"/>
     <instance objName="Ob_Door" x="848" y="672" name="inst_AF861148" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="-89"/>
-    <instance objName="Ob_SkeletonKing" x="528" y="240" name="inst_4C523070" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Ob_SkeletonKing" x="528" y="240" name="inst_4C523070" locked="0" code="" scaleX="0.75" scaleY="0.75" colour="4294967295" rotation="0"/>
     <instance objName="Ob_Air2" x="544" y="656" name="inst_CFEE7ADB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
