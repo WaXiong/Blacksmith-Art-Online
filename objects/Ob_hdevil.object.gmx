@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hEnemy = Ob_hMinion;
+            <string>hEnemy = Ob_hdevil;
 can_move = true;
 </string>
           </argument>
