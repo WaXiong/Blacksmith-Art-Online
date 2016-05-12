@@ -36,6 +36,8 @@ fire_speed = 0.3; //One shot every fire_speed seconds
 
 stun = 5; // 5 sec window to hit dragon
 
+global.knocked = false;
+
 </string>
           </argument>
         </arguments>
