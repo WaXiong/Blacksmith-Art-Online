@@ -73,6 +73,10 @@
       <sprite>sprites\spr_window_br</sprite>
       <sprite>sprites\spr_window_base</sprite>
     </sprites>
+    <sprites name="Skeleton">
+      <sprite>sprites\Sp_SkeletonKing</sprite>
+      <sprite>sprites\Sp_Skeleton</sprite>
+    </sprites>
     <sprite>sprites\spr_portrait</sprite>
     <sprite>sprites\spr_dragon</sprite>
     <sprite>sprites\spr_fireball</sprite>
@@ -110,10 +114,18 @@
     <font>fonts\regularTextFont</font>
   </fonts>
   <objects name="objects">
+    <objects name="Skeleton">
+     <object>objects\Ob_SkeletonKing</object>
+     <object>objects\Ob_Skeleton</object>
+    </objects>
     <objects name="Dragon">
       <object>objects\Ob_Dragon</object>
       <object>objects\Ob_FireBall</object>
       <object>objects\Ob_LavaBall</object>
+    </objects>
+    <objects name="UnderWater">
+     <object>objects\Ob_Shine</object>
+     <object>objects\Ob_Air2</object>
     </objects>
     <object>objects\Ob_Shine</object>
     <object>objects\Ob_Air</object>
@@ -184,6 +196,7 @@
     <room>rooms\Rm_Cave</room>
     <room>rooms\Rm_GameOver</room>
     <room>rooms\rm_window</room>
+    <room>rooms\Rm_Forest</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
