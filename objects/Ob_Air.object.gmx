@@ -2,7 +2,7 @@
 <object>
   <spriteName>Sp_AirBubble</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -26,12 +26,14 @@
           <argument>
             <kind>1</kind>
             <string> // check to see if you are under water
- if(point_distance(Ob_Char.x, Ob_Char.y, Ob_Air.x, Ob_Air.y) &lt; 50)
+ //if(point_distance(Ob_Char.x, Ob_Char.y, Ob_Air.x, Ob_Air.y) &lt; 50)
+if collision_circle(Ob_Air.x, Ob_Air.y, 50, Ob_Char, false, true)
     {
     global.in_water = false;
     }
     
- if(point_distance(Ob_Char.x, Ob_Char.y, Ob_Air.x, Ob_Air.y) &gt; 50)
+ //if(point_distance(Ob_Char.x, Ob_Char.y, Ob_Air.x, Ob_Air.y) &gt; 50)
+    else
     {
     global.in_water = true; 
     }

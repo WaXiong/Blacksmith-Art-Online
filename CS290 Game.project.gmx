@@ -88,6 +88,10 @@
       <sprite>sprites\spr_window_br</sprite>
       <sprite>sprites\spr_window_base</sprite>
     </sprites>
+    <sprites name="Skeleton">
+      <sprite>sprites\Sp_SkeletonKing</sprite>
+      <sprite>sprites\Sp_Skeleton</sprite>
+    </sprites>
     <sprite>sprites\spr_portrait</sprite>
   </sprites>
   <backgrounds name="background">
@@ -122,13 +126,19 @@
     <font>fonts\regularTextFont</font>
   </fonts>
   <objects name="objects">
+    <objects name="Skeleton">
+      <object>objects\Ob_SkeletonKing</object>
+      <object>objects\Ob_Skeleton</object>
+    </objects>
     <objects name="Dragon">
       <object>objects\Ob_Dragon</object>
       <object>objects\Ob_FireBall</object>
       <object>objects\Ob_LavaBall</object>
     </objects>
-    <object>objects\Ob_Shine</object>
-    <object>objects\Ob_Air</object>
+    <objects name="UnderWater">
+      <object>objects\Ob_Shine</object>
+      <object>objects\Ob_Air2</object>
+    </objects>
     <objects name="GameController and parts">
       <object>objects\Ob_GameController</object>
       <object>objects\Ob_HealthInt</object>
@@ -187,12 +197,6 @@
     <room>rooms\Rm_Init</room>
     <room>rooms\Rm_CreateCharacter</room>
     <room>rooms\Rm_Main</room>
-    <room>rooms\Rm_Water</room>
-    <room>rooms\Rm_WaterTrans</room>
-    <room>rooms\Rm_Cave</room>
-    <room>rooms\Rm_Forest</room>
-    <room>rooms\Rm_GameOver</room>
-    <room>rooms\rm_window</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

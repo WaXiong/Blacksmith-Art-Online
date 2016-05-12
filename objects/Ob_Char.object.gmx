@@ -435,7 +435,7 @@ player_y = other.target_y;
             <kind>1</kind>
             <string>if (is_hit == false){
     is_hit = true;
-    global.hp = global.hp - 3;
+    global.hp = global.hp - 2;
     alarm [1] = (room_speed * invincible);
 }
 </string>
@@ -462,7 +462,7 @@ player_y = other.target_y;
             <kind>1</kind>
             <string>if (is_hit == false){
     is_hit = true;
-    global.hp = global.hp - 3;
+    global.hp = global.hp - 2;
     alarm [1] = (room_speed * invincible);
 }
 </string>
