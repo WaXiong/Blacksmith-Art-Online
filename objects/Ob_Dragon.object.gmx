@@ -112,7 +112,7 @@ global.knocked = false;
     instance_destroy();
 }
 
-if (dragon_hp &lt;= 10)
+if (dragon_hp &lt;= 20 || keyboard_check(ord("p")))
 {
     fire_speed = 0.1;
 }

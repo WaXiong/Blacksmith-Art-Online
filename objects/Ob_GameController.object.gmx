@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>if global.gameStarted {
-    if global.hp == 0 &amp;&amp; room != Rm_GameOver {     
+    if global.hp &lt;= 0 &amp;&amp; room != Rm_GameOver {     
         global.deathRoom = room; 
         roomfadetransition(Rm_GameOver); //when the player dies, go to the game over screen.
     }

@@ -54,13 +54,14 @@
       <sprite>sprites\Sp_HealthTree</sprite>
       <sprite>sprites\Sp_HealthUpTree</sprite>
       <sprite>sprites\Sp_BigTree</sprite>
-      <sprite>sprites\Sp_TreeRed</sprite>
       <sprite>sprites\Sp_Tree</sprite>
     </sprites>
     <sprites name="Dragon">
       <sprite>sprites\Sp_Dragon</sprite>
       <sprite>sprites\Sp_LavaBall</sprite>
       <sprite>sprites\Sp_FireBall</sprite>
+      <sprite>sprites\spr_dragon</sprite>
+      <sprite>sprites\spr_fireball</sprite>
     </sprites>
     <sprites name="window">
       <sprite>sprites\spr_window_tl</sprite>
@@ -78,8 +79,7 @@
       <sprite>sprites\Sp_Skeleton</sprite>
     </sprites>
     <sprite>sprites\spr_portrait</sprite>
-    <sprite>sprites\spr_dragon</sprite>
-    <sprite>sprites\spr_fireball</sprite>
+    <sprite>sprites\Sp_TreeRed</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\Bg_Main</background>
@@ -114,6 +114,9 @@
     <font>fonts\regularTextFont</font>
   </fonts>
   <objects name="objects">
+    <objects name="BloodTree">
+      <object>objects\Ob_TreeRed</object>
+    </objects>
     <objects name="Skeleton">
       <object>objects\Ob_SkeletonKing</object>
       <object>objects\Ob_Skeleton</object>
@@ -137,7 +140,6 @@
       <object>objects\Ob_StillStructures</object>
       <object>objects\Ob_BigTree</object>
       <object>objects\Ob_Tree</object>
-      <object>objects\Ob_TreeRed</object>
       <object>objects\Ob_HealthUpTree</object>
       <object>objects\Ob_HealthTree</object>
     </objects>

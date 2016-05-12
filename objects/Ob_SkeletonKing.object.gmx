@@ -33,7 +33,7 @@ skull_hp = 50;
 
 fractured = false;
 
-spawn_speed = 1;
+spawn_speed = 2;
 </string>
           </argument>
         </arguments>
@@ -104,8 +104,8 @@ spawn_speed = 1;
           <argument>
             <kind>1</kind>
             <string>
-skulls = 6//irandom_range(1, 6);
-
+right_skulls = 4//range is from -3 to 4 making a total of 8 counting 0;
+left_skulls = -3;
 if (skull_hp &lt;= 0)
 {
     instance_destroy();
@@ -114,9 +114,16 @@ if (skull_hp &lt;= 0)
 if (can_shoot == true)
 {
     can_shoot = false;
-    for(i = 0; i &lt;= skulls ; i++)
+    for(i = left_skulls ; i &lt;= right_skulls ; i++)
     {
-        instance_create(Ob_SkeletonKing.x + (((skulls/2 * 32) + ((skulls/2 - 2) * 16)) - (i * 32)), Ob_SkeletonKing.y + 32 , Ob_Skeleton);
+        if (i &lt; 0)
+        {
+            instance_create(Ob_SkeletonKing.x + (32*(i^2)), Ob_SkeletonKing.y + 48 + (32*(i^2)), Ob_Skeleton);
+        }
+        else
+        {
+            instance_create(Ob_SkeletonKing.x + (32*(i^2)), Ob_SkeletonKing.y + 48 - (32*(i^2)), Ob_Skeleton);
+        }
     }
 
     alarm [0] = (room_speed * spawn_speed);

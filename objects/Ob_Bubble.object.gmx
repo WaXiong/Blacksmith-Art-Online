@@ -124,7 +124,7 @@ else if ((global.bubble &gt; 0) &amp;&amp; (breathing = false))
 {
     breathing = true;
     global.bubble = global.bubble - 1;
-    alarm [0] = (room_speed * 1);
+    alarm [0] = (room_speed * .5);
 }
     //not breathing counts as getting hit
 else if ((global.bubble == 0) &amp;&amp; (is_hit == false))
