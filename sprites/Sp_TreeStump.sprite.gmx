@@ -2,15 +2,15 @@
 <sprite>
   <type>0</type>
   <xorig>25</xorig>
-  <yorigin>12</yorigin>
-  <colkind>0</colkind>
+  <yorigin>22</yorigin>
+  <colkind>2</colkind>
   <coltolerance>0</coltolerance>
-  <sepmasks>-1</sepmasks>
-  <bboxmode>0</bboxmode>
+  <sepmasks>0</sepmasks>
+  <bboxmode>1</bboxmode>
   <bbox_left>0</bbox_left>
   <bbox_right>49</bbox_right>
   <bbox_top>0</bbox_top>
-  <bbox_bottom>24</bbox_bottom>
+  <bbox_bottom>44</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -18,9 +18,8 @@
   </TextureGroups>
   <For3D>0</For3D>
   <width>50</width>
-  <height>25</height>
+  <height>45</height>
   <frames>
-    <frame index="0">images\Sp_Root_0.png</frame>
-    <frame index="1">images\Sp_Root_1.png</frame>
+    <frame index="0">images\Sp_TreeStump_0.png</frame>
   </frames>
 </sprite>

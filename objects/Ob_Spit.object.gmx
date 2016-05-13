@@ -55,7 +55,8 @@ point1 = irandom(3)
 
 if (point1 &lt;= 2)
 {
-    instance_create(x, y, Ob_Root);
+     instance_create(x, y - 48, Ob_Root);
+     instance_create(x, y + 48, Ob_Root);
 }
 if(point_distance(x, y, Ob_TreeRed.x, Ob_TreeRed.y) &gt;= 400)
 {

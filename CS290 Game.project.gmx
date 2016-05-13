@@ -84,6 +84,7 @@
       <sprite>sprites\Sp_Root</sprite>
       <sprite>sprites\Sp_Spit</sprite>
       <sprite>sprites\Sp_TreeRed</sprite>
+      <sprite>sprites\Sp_TreeStump</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -123,6 +124,7 @@
       <object>objects\Ob_Spit</object>
       <object>objects\Ob_Root</object>
       <object>objects\Ob_TreeRed</object>
+      <object>objects\Ob_TreeStump</object>
     </objects>
     <objects name="Skeleton">
       <object>objects\Ob_SkeletonKing</object>
